@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  /* Primary - Dark Navy Blue */
+  --color-primary: #3E4197;
+  --color-primary-light: #2A4A73;
+  --color-primary-dark: #152942;
+
+  /* Secondary - Yellow/Gold Accent */
+  --color-secondary: #FCDE1C;
+  --color-secondary-light: #E4BC6A;
+  --color-secondary-dark: #B8923D;
+}
+
+@layer base {
+  html {
+    background-color: #ffffff;
+    color-scheme: light;
+  }
+
+  body {
+    background-color: #ffffff;
+    color: #171717;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
