@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "home": "HOME",
+    "aboutUs": "ABOUT US",
+    "biserOil": "BISER OIL",
+    "packing": "PACKING",
+    "partners": "PARTNERS",
+    "contactUs": "CONTACT US"
+  },
+  "footer": {
+    "followUs": "Follow Us!",
+    "openingHours": "Opening hours",
+    "mondayFriday": "Monday-Friday",
+    "saturday": "Saturday",
+    "address": "Address",
+    "information": "Information",
+    "copyright": "Ostrog-Luna | All Rights Reserved"
+  },
+  "home": {
+    "welcome": "Welcome to Ostrog Luna",
+    "subtitle": "Premium sunflower oil producer - Homepage coming soon."
+  },
+  "expertise": {
+    "label": "ABOUT US",
+    "title": "Our Expertise",
+    "paragraphs": [
+      "We are a producer of high-quality edible oils with a strong focus on sunflower oil and carefully selected raw materials. Our production process is built on consistency, quality control, and respect for natural ingredients.",
+      "From seed selection to final bottling, every step is carefully monitored to ensure purity, stability, and reliable performance in everyday cooking and professional use.",
+      "Our goal is simple — to deliver oils that meet high quality standards and earn long-term trust."
+    ],
+    "stats": {
+      "businessPartners": "Business\nPartners",
+      "exportMarkets": "Export\nMarkets",
+      "litersAnnually": "Liters\nAnnually"
+    }
+  },
+  "journey": {
+    "title": "Our Journey",
+    "milestones": {
+      "ourStart": {
+        "title": "Our Start",
+        "description": "The journey began."
+      },
+      "productionMilestone": {
+        "title": "Production Milestone",
+        "description": "Own oil production launched."
+      },
+      "internationalExpansion": {
+        "title": "International Expansion",
+        "description": "Reached global markets."
+      },
+      "modernPackaging": {
+        "title": "Modern Packaging",
+        "description": "Launched advanced packaging solutions."
+      }
+    }
+  },
+  "certifications": {
+    "title": "Certifications",
+    "description": "Our certifications demonstrate our dedication to quality, safety, and internationally recognized standards in edible oil production and packaging.",
+    "certificates": {
+      "haccp": "Food safety control system",
+      "ifs": "International food safety and quality standard",
+      "iso": "Food safety management"
+    },
+    "button": "See all Certifications"
+  }
+}

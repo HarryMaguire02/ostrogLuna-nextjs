@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import Container from "./Container";
+import type { Dictionary } from "../i18n";
 
-export default function Footer() {
+export default function Footer({ dict }: { dict: Dictionary }) {
   return (
     <footer className="bg-primary text-white">
       <Container className="pt-6 pb-4">
@@ -19,7 +20,9 @@ export default function Footer() {
               />
             </Link>
             <div>
-              <p className="text-secondary font-medium mb-2">Follow Us!</p>
+              <p className="text-secondary font-medium mb-2">
+                {dict.footer.followUs}
+              </p>
               <div className="flex gap-3">
                 <a
                   href="https://facebook.com"
@@ -54,17 +57,19 @@ export default function Footer() {
           </div>
 
           {/* Right side - 50% width */}
-          <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-3 gap-8">
+          <div className="md:w-1/2 grid grid-cols-1 sm:grid-cols-[4fr_3fr_3fr] gap-8">
             {/* Opening Hours */}
             <div>
-              <h3 className="text-secondary font-medium mb-4">Opening hours</h3>
+              <h3 className="text-secondary font-medium mb-4">
+                {dict.footer.openingHours}
+              </h3>
               <dl className="space-y-2 text-sm">
-                <div className="flex sm:justify-between gap-2">
-                  <dt>Monday-Friday</dt>
+                <div className="flex sm:justify-start gap-2">
+                  <dt>{dict.footer.mondayFriday}</dt>
                   <dd>7:30 - 16:30</dd>
                 </div>
-                <div className="flex sm:justify-between gap-2">
-                  <dt>Saturday</dt>
+                <div className="flex sm:justify-start gap-2">
+                  <dt>{dict.footer.saturday}</dt>
                   <dd>7:30 - 16:30</dd>
                 </div>
               </dl>
@@ -72,7 +77,9 @@ export default function Footer() {
 
             {/* Address */}
             <div>
-              <h3 className="text-secondary font-medium mb-4">Address</h3>
+              <h3 className="text-secondary font-medium mb-4">
+                {dict.footer.address}
+              </h3>
               <address className="not-italic text-sm space-y-1">
                 <p>Atanas Mucev no.2</p>
                 <p>2400 Strumica</p>
@@ -82,7 +89,9 @@ export default function Footer() {
 
             {/* Contact Information */}
             <div>
-              <h3 className="text-secondary font-medium mb-4">Information</h3>
+              <h3 className="text-secondary font-medium mb-4">
+                {dict.footer.information}
+              </h3>
               <div className="space-y-2 text-sm">
                 <p>
                   <a
@@ -108,7 +117,7 @@ export default function Footer() {
         {/* Copyright */}
         <hr className="border-t-2 border-secondary mt-4" />
         <p className="text-center text-sm text-white/60 py-4">
-          &copy;{new Date().getFullYear()} Ostrog-Luna | All Rights Reserved
+          &copy;{new Date().getFullYear()} {dict.footer.copyright}
         </p>
       </Container>
     </footer>

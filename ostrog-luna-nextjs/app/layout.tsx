@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
   title: {
@@ -22,7 +20,6 @@ export const metadata: Metadata = {
   authors: [{ name: "Ostrog Luna" }],
   openGraph: {
     type: "website",
-    locale: "en_US",
     siteName: "Ostrog Luna",
     title: "Ostrog Luna - Premium Sunflower Oil Producer",
     description:
@@ -39,13 +36,5 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return (
-    <html lang="en">
-      <body className="antialiased bg-white">
-        <Header />
-        <main>{children}</main>
-        <Footer />
-      </body>
-    </html>
-  );
+  return children;
 }
