@@ -7,10 +7,10 @@ import type { Locale } from "../../i18n";
 export default async function AboutUs({
   params,
 }: {
-  params: Promise<{ lang: Locale }>;
+  params: Promise<{ lang: string }>;
 }) {
   const { lang } = await params;
-  const dict = await getDictionary(lang);
+  const dict = await getDictionary(lang as Locale);
 
   return (
     <div className="pt-20">
