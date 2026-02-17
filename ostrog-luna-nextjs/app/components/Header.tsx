@@ -35,7 +35,7 @@ export default function Header({
 
   const languages = [
     { code: "en" as Locale, label: "EN", flag: "/english-flag.png", href: cleanPath },
-    { code: "mk" as Locale, label: "MK", flag: "/english-flag.png", href: `/mk${cleanPath === "/" ? "" : cleanPath}` },
+    { code: "mk" as Locale, label: "MK", flag: "/macedonian-flag.png", href: `/mk${cleanPath === "/" ? "" : cleanPath}` },
   ];
 
   const currentLang = languages.find((l) => l.code === lang)!;
@@ -128,7 +128,7 @@ export default function Header({
                       <Link
                         key={l.code}
                         href={l.href}
-                        className="flex items-center justify-center px-1 py-1"
+                        className="flex items-center justify-start px-1 py-1"
                         onClick={() => setIsLangOpen(false)}
                       >
                         <Image
@@ -242,7 +242,7 @@ export default function Header({
                       <Link
                         key={l.code}
                         href={l.href}
-                        className="flex items-center justify-center px-1 py-1"
+                        className="flex items-center justify-start px-1 py-1"
                         onClick={() => {
                           setIsLangOpenMobile(false);
                           setIsMenuOpen(false);

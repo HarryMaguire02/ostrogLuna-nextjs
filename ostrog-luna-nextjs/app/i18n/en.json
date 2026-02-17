@@ -55,6 +55,34 @@
       }
     }
   },
+  "packing": {
+    "privateLabelSolutions": {
+      "label": "Private Label Solutions",
+      "subtitle": "Your Brand. Our Expertise.",
+      "paragraphs": [
+        "We offer comprehensive private label solutions for partners looking to develop or expand their edible oil portfolio under their own brand.",
+        "With modern production facilities, advanced quality control, and flexible packaging capabilities, we ensure reliable and high-quality products tailored to your market needs."
+      ]
+    },
+    "flexiblePackagingSolutions": {
+      "title": "Flexible Packaging Solutions",
+      "paragraphs": [
+        "We offer a wide range of packaging options for crude and refined oils at competitive prices — from retail bottles and food service packs to bulk shipments.",
+        "As one of the leading exporters of packed oils in North Macedonia, we can meet high-volume demands at any time.",
+        "We provide fully customizable labels tailored to your market requirements. Private label production available for retail and catering partners."
+      ]
+    },
+    "whatWeOffer": {
+      "title": "What We Offer",
+      "subtitle": "Full-service private label production, including:",
+      "items": {
+        "production": "Production, filling, and packaging under your brand",
+        "packaging": "Customized packaging formats and volumes",
+        "labeling": "Labeling adapted to your market requirements",
+        "quality": "Consistent quality control at every stage"
+      }
+    }
+  },
   "certifications": {
     "title": "Certifications",
     "description": "Our certifications demonstrate our dedication to quality, safety, and internationally recognized standards in edible oil production and packaging.",
