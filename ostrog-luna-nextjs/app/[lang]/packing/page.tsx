@@ -1,5 +1,8 @@
 import PrivateLabelSolutions from "../../components/PrivateLabelSolutions";
 import FlexiblePackagingSolutions from "../../components/FlexiblePackagingSolutions";
+import ProductRange from "../../components/ProductRange";
+import ProductionExcellence from "../../components/ProductionExcellence";
+import ProductionInAction from "../../components/ProductionInAction";
 import WhatWeOffer from "../../components/WhatWeOffer";
 import { getDictionary } from "../../i18n";
 import type { Locale } from "../../i18n";
@@ -61,6 +64,84 @@ export default async function Packing({
         paragraphs={dict.packing.flexiblePackagingSolutions.paragraphs}
         imageSrc="/flexible-packaging-solutions.png"
         imageAlt="Various oil packaging formats - bottles, containers, and bulk options"
+      />
+
+      <ProductRange
+        title={dict.packing.productRange.title}
+        subtitle={dict.packing.productRange.subtitle}
+        products={[
+          {
+            imageSrc: "/range-750ml.png",
+            imageAlt: "750 mL oil bottle",
+            label: dict.packing.productRange.products["750ml"],
+          },
+          {
+            imageSrc: "/range-1L.png",
+            imageAlt: "1 liter oil bottle",
+            label: dict.packing.productRange.products["1L"],
+          },
+          {
+            imageSrc: "/range-4750ml.png",
+            imageAlt: "4750 mL oil container",
+            label: dict.packing.productRange.products["4750ml"],
+          },
+          {
+            imageSrc: "/range-5L.png",
+            imageAlt: "5 liter oil container",
+            label: dict.packing.productRange.products["5L"],
+          },
+          {
+            imageSrc: "/range-10L.png",
+            imageAlt: "10 liter oil container",
+            label: dict.packing.productRange.products["10L"],
+          },
+          {
+            imageSrc: "/range-40ft.png",
+            imageAlt: "40ft shipping container",
+            label: dict.packing.productRange.products["40ft"],
+          },
+          {
+            imageSrc: "/range-20ft.png",
+            imageAlt: "20ft shipping container",
+            label: dict.packing.productRange.products["20ft"],
+          },
+          {
+            imageSrc: "/range-truck.png",
+            imageAlt: "Food-grade tanker truck",
+            label: dict.packing.productRange.products.truck,
+          },
+        ]}
+      />
+
+      <ProductionExcellence
+        title={dict.packing.productionExcellence.title}
+        subtitle={dict.packing.productionExcellence.subtitle}
+        features={[
+          {
+            iconSrc: "/production-factory.png",
+            iconAlt: "Factory icon - manufacturing technology",
+            title: dict.packing.productionExcellence.features.manufacturing.title,
+            description: dict.packing.productionExcellence.features.manufacturing.description,
+          },
+          {
+            iconSrc: "/production-drop.png",
+            iconAlt: "Oil drop icon - refining process",
+            title: dict.packing.productionExcellence.features.refining.title,
+            description: dict.packing.productionExcellence.features.refining.description,
+          },
+          {
+            iconSrc: "/production-capacity.png",
+            iconAlt: "Warehouse icon - daily capacity",
+            title: dict.packing.productionExcellence.features.capacity.title,
+            description: dict.packing.productionExcellence.features.capacity.description,
+          },
+        ]}
+      />
+
+      <ProductionInAction
+        title={dict.packing.productionInAction.title}
+        subtitle={dict.packing.productionInAction.subtitle}
+        videoSrc="/product-in-action.mp4"
       />
     </div>
   );

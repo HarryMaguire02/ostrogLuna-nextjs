@@ -23,15 +23,15 @@ export default function PrivateLabelSolutions({
           {/* Content */}
           <div className="w-full sm:w-1/2">
             {/* Title with accent line */}
-            <div className="flex items-center gap-4 mb-1">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary whitespace-nowrap">
+            <div className="flex justify-center sm:justify-start items-center gap-4 mb-1">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary text-center sm:text-left">
                 {label}
               </h2>
-              <span className="h-0.75 w-full rounded-full bg-linear-to-r from-primary to-secondary" />
+              <span className="hidden sm:block h-0.75 flex-1 rounded-full bg-linear-to-r from-primary to-secondary" />
             </div>
 
             {/* Subtitle */}
-            <p className="text-sm font-bold tracking-widest text-primary mb-6">
+            <p className="text-sm font-bold tracking-widest text-primary mb-6 text-center sm:text-left">
               {subtitle}
             </p>
 

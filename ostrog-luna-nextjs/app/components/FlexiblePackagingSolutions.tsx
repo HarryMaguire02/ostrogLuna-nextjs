@@ -18,11 +18,11 @@ export default function FlexiblePackagingSolutions({
     <section className="py-6">
       <Container>
         {/* Title with decorative lines */}
-        <div className="flex items-center gap-8 sm:gap-12 mb-6 md:mb-8">
-          <span className="h-0.75 flex-1 lg:flex-none lg:w-1/2 lg:shrink-0 rounded-full bg-linear-to-r from-primary to-secondary" />
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary lg:whitespace-nowrap">
+        <div className="flex justify-center sm:justify-start items-center gap-8 sm:gap-12 mb-6 md:mb-8">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary text-center sm:text-left">
             {title}
           </h2>
+          <span className="hidden sm:block h-0.75 flex-1 rounded-full bg-linear-to-r from-primary to-secondary" />
         </div>
 
         {/* Two columns: image + text */}

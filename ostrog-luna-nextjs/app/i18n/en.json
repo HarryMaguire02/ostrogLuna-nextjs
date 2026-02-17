@@ -64,6 +64,42 @@
         "With modern production facilities, advanced quality control, and flexible packaging capabilities, we ensure reliable and high-quality products tailored to your market needs."
       ]
     },
+    "productionExcellence": {
+      "title": "Our Production Excellence",
+      "subtitle": "Where technology, quality and reliability come together",
+      "features": {
+        "manufacturing": {
+          "title": "Manufacturing technology",
+          "description": "Built with state-of-the-art technology and equipment from world-renowned manufacturers such as Alfa Laval (Sweden) and Kerting (Germany), ensuring precision and reliability in every stage of production."
+        },
+        "refining": {
+          "title": "Refining the raw material",
+          "description": "Our refining process transforms raw sunflower oil into 100% premium quality oil, optimized for taste, purity, color and extended shelf life — meeting the highest consumer standards."
+        },
+        "capacity": {
+          "title": "Daily capacity",
+          "description": "With a daily capacity of 100 tons, OstrogLuna ensures consistent availability. Ready-made BISER cooking oil is stored in modern warehouses, prepared for fast distribution to customers."
+        }
+      }
+    },
+    "productionInAction": {
+      "title": "Our Production in Action",
+      "subtitle": "A closer look at our technology, processes and quality standards"
+    },
+    "productRange": {
+      "title": "Product Range",
+      "subtitle": "High-quality oils under your private label",
+      "products": {
+        "750ml": "750 mL",
+        "1L": "1 L",
+        "4750ml": "4750 mL",
+        "5L": "5 L",
+        "10L": "10 L",
+        "40ft": "40ft Container",
+        "20ft": "20ft Container",
+        "truck": "Food-grade tanker truck"
+      }
+    },
     "flexiblePackagingSolutions": {
       "title": "Flexible Packaging Solutions",
       "paragraphs": [
