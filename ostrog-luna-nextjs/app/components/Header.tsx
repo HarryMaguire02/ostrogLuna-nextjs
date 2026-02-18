@@ -86,13 +86,16 @@ export default function Header({
             </nav>
 
             {/* Language Dropdown - desktop only */}
-            <div className="relative hidden lg:block">
+            <div
+              className="relative hidden lg:block"
+              onMouseEnter={() => setIsLangOpen(true)}
+              onMouseLeave={() => setIsLangOpen(false)}
+            >
               <button
                 type="button"
                 className={`flex items-center justify-center border border-primary bg-primary/10 px-1 py-1 transition-colors ${
                   isLangOpen ? "rounded-t-md border-b-0" : "rounded-md"
                 }`}
-                onClick={() => setIsLangOpen(!isLangOpen)}
                 aria-expanded={isLangOpen}
                 aria-haspopup="true"
               >

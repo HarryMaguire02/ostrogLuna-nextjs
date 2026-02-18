@@ -95,8 +95,8 @@
         "4750ml": "4750 mL",
         "5L": "5 L",
         "10L": "10 L",
-        "40ft": "40ft Container",
-        "20ft": "20ft Container",
+        "40ft": "40ft Container flexi tank",
+        "20ft": "20ft Container flexi tank",
         "truck": "Food-grade tanker truck"
       }
     },
@@ -116,6 +116,61 @@
         "packaging": "Customized packaging formats and volumes",
         "labeling": "Labeling adapted to your market requirements",
         "quality": "Consistent quality control at every stage"
+      }
+    }
+  },
+  "biserOil": {
+    "hero": {
+      "label": "BISER OIL",
+      "title": "Decades of Trust in\nEvery Drop",
+      "paragraphs": [
+        "The well-known brand that dates back more than 27 years on the domestic market and beyond – 100% sunflower edible oil \"BISER\" maintains the high quality and the well-deserved trust of its consumers. From 2023 became part of the Oil Refinery company \"OSTROG-LUNA\" – Strumica – North Macedonia.",
+        "\"BISER\" is a high-quality, 100% natural, and refined edible sunflower oil used for cooking, frying, and baking. Also, it can be used for preparing salads, dressings, and mayonnaise.",
+        "It is rich with vitamin E and polyunsaturated fatty acids. It contains the natural characteristics of the sunflower seeds from which it is produced."
+      ]
+    },
+    "commercialPacking": {
+      "title": "Commercial Packing Options",
+      "productName": "Sunflower oil",
+      "productSubtitle": "refined",
+      "details": {
+        "palette": { "label": "Palette" },
+        "packing": { "label": "Packing" },
+        "shelfLife": { "label": "Shelf life", "value": "12 months at 0–30°C" },
+        "thermofoil": { "label": "Thermofoil Pack" }
+      },
+      "itemDetails": {
+        "10l":    { "packing": "PET bottles of 10 L",   "palette": "36 Packages / 72 Bottles",  "thermofoil": "2 bottles"  },
+        "5l":     { "packing": "PET bottles of 5 L",    "palette": "60 Packages / 144 Bottles", "thermofoil": "4 bottles"  },
+        "4750ml": { "packing": "PET bottles of 4750 mL","palette": "36 Packages / 144 Bottles", "thermofoil": "4 bottles"  },
+        "950ml":  { "packing": "PET bottles of 950 mL", "palette": "60 Packages / 720 Bottles", "thermofoil": "12 bottles" },
+        "850ml":  { "packing": "PET bottles of 850 mL", "palette": "60 Packages / 720 Bottles", "thermofoil": "12 bottles" },
+        "1l":     { "packing": "PET bottles of 1 L",    "palette": "60 Packages / 720 Bottles", "thermofoil": "12 bottles" }
+      }
+    },
+    "guarantee": {
+      "title": "A Guarantee of Quality and Trust",
+      "paragraphs": [
+        "The oil is refined to the highest quality to ensure a healthy and balanced diet because it is a daily used food in the household.",
+        "The edible sunflower oil \"BISER\" is produced in the technologically most modern factory. The team of high-quality engineers and technicians, the advanced technology controlled according to IFS standards and the long-standing epithet \"oil number 1 in North Macedonia\" are a guarantee for the high quality of \"BISER\" sunflower oil."
+      ]
+    },
+    "bulkPackaging": {
+      "title": "Bulk Packaging Options",
+      "items": {
+        "containers": "ISO-certified 20ft and 40ft tank containers provide secure and efficient bulk transport of edible oil. Designed specifically for food-grade liquids, they ensure safe and reliable delivery across regional and international routes.",
+        "storage": "High-quality stainless steel storage tanks ensure safe and hygienic preservation of edible oil. Temperature-controlled and food-grade certified, they maintain product quality at every stage.",
+        "vessel": "Specialized tanker vessels allow large-scale international delivery of edible oil under strict quality and safety standards."
+      }
+    },
+    "keyBenefits": {
+      "title": "Key Benefits",
+      "items": {
+        "noAdditives": "No Additives",
+        "naturalComposition": "Natural Composition",
+        "vitaminE": "Vitamin E",
+        "protectivePacking": "Protective Packaging",
+        "noTransFats": "No Trans Fats"
       }
     }
   },

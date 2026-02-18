@@ -15,12 +15,12 @@ export default function ProductionInAction({
     <section className="py-6">
       <Container>
         {/* Section heading with decorative lines */}
-        <div className="flex items-center gap-4 mb-2">
-          <span className="h-0.75 flex-1 rounded-full bg-linear-to-r from-secondary to-primary" />
+        <div className="flex items-center justify-center gap-4 mb-2">
+          <span className="hidden md:block h-0.75 flex-1 rounded-full bg-linear-to-r from-secondary to-primary" />
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary text-center sm:whitespace-nowrap">
             {title}
           </h2>
-          <span className="h-0.75 flex-1 rounded-full bg-linear-to-r from-primary to-secondary" />
+          <span className="hidden md:block h-0.75 flex-1 rounded-full bg-linear-to-r from-primary to-secondary" />
         </div>
 
         {/* Subtitle */}
