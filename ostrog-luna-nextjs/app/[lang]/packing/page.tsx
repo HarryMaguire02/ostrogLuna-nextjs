@@ -4,15 +4,40 @@ import ProductRange from "../../components/ProductRange";
 import ProductionExcellence from "../../components/ProductionExcellence";
 import ProductionInAction from "../../components/ProductionInAction";
 import WhatWeOffer from "../../components/WhatWeOffer";
+import Separator from "../../components/Separator";
 import { getDictionary } from "../../i18n";
 import type { Locale } from "../../i18n";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Packing | OstrogLuna - Private Label & Packaging Solutions",
-  description:
-    "OstrogLuna offers private label solutions, flexible packaging options, and contract refining services for edible oils. From retail bottles to bulk shipments.",
-};
+const BASE_URL = process.env.SITE_URL ?? "https://ostrogluna.com";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const isMk = lang === "mk";
+
+  return {
+    title: isMk
+      ? "Пакување | Острог Луна - Приватна Етикета и Решенија за Пакување"
+      : "Packing | Ostrog Luna - Private Label & Packaging Solutions",
+    description: isMk
+      ? "Острог Луна нуди решенија за приватна етикета, флексибилно пакување и договорно рафинирање на јадливи масла. Од 750мл малопродажни шишиња до 40ft расфус контејнери."
+      : "Ostrog Luna offers private label solutions, flexible packaging, and contract refining for edible oils. From 750ml retail bottles to 40ft bulk containers.",
+    alternates: {
+      canonical: isMk ? `${BASE_URL}/mk/packing` : `${BASE_URL}/packing`,
+      languages: {
+        en: `${BASE_URL}/packing`,
+        mk: `${BASE_URL}/mk/packing`,
+      },
+    },
+    openGraph: {
+      url: isMk ? `${BASE_URL}/mk/packing` : `${BASE_URL}/packing`,
+    },
+  };
+}
 
 export default async function Packing({
   params,
@@ -25,12 +50,15 @@ export default async function Packing({
   return (
     <div className="pt-20">
       <PrivateLabelSolutions
+        pageLabel={dict.packing.privateLabelSolutions.pageLabel}
         label={dict.packing.privateLabelSolutions.label}
         subtitle={dict.packing.privateLabelSolutions.subtitle}
         paragraphs={dict.packing.privateLabelSolutions.paragraphs}
         imageSrc="/private-label-solutions.png"
         imageAlt="Oil bottles with private label branding - Your Brand packaging solutions"
       />
+
+      <Separator />
 
       <WhatWeOffer
         title={dict.packing.whatWeOffer.title}
@@ -59,12 +87,16 @@ export default async function Packing({
         ]}
       />
 
+      <Separator />
+
       <FlexiblePackagingSolutions
         title={dict.packing.flexiblePackagingSolutions.title}
         paragraphs={dict.packing.flexiblePackagingSolutions.paragraphs}
         imageSrc="/flexible-packaging-solutions.png"
         imageAlt="Various oil packaging formats - bottles, containers, and bulk options"
       />
+
+      <Separator />
 
       <ProductRange
         title={dict.packing.productRange.title}
@@ -113,6 +145,8 @@ export default async function Packing({
         ]}
       />
 
+      <Separator />
+
       <ProductionExcellence
         title={dict.packing.productionExcellence.title}
         subtitle={dict.packing.productionExcellence.subtitle}
@@ -137,6 +171,8 @@ export default async function Packing({
           },
         ]}
       />
+
+      <Separator />
 
       <ProductionInAction
         title={dict.packing.productionInAction.title}

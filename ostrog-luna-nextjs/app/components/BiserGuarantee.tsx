@@ -15,11 +15,11 @@ export default function BiserGuarantee({
   imageAlt,
 }: BiserGuaranteeProps) {
   return (
-    <section className="py-6">
+    <section className="py-8 sm:py-12">
       <Container>
         {/* Title row - full width */}
-        <div className="flex items-center gap-4 mb-4 sm:mb-0">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary sm:whitespace-nowrap text-center sm:text-left">
+        <div className="flex items-center gap-4 mb-6 sm:mb-0">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary sm:whitespace-nowrap">
             {title}
           </h2>
           <span className="h-0.75 w-full rounded-full bg-linear-to-r from-primary to-secondary hidden sm:block" />
@@ -30,7 +30,7 @@ export default function BiserGuarantee({
           {/* Paragraphs */}
           <div className="w-full sm:w-1/2 space-y-4">
             {paragraphs.map((text, i) => (
-              <p key={i} className="text-primary leading-relaxed text-center sm:text-left">
+              <p key={i} className="text-primary leading-relaxed">
                 {text}
               </p>
             ))}

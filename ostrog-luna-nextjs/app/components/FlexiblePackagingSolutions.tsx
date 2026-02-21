@@ -15,11 +15,11 @@ export default function FlexiblePackagingSolutions({
   imageAlt,
 }: FlexiblePackagingSolutionsProps) {
   return (
-    <section className="py-6">
+    <section className="py-8 sm:py-12">
       <Container>
         {/* Title with decorative lines */}
-        <div className="flex justify-center sm:justify-start items-center gap-8 sm:gap-12 mb-6 md:mb-8">
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary text-center sm:text-left">
+        <div className="flex items-center gap-4 mb-6 sm:mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold text-primary">
             {title}
           </h2>
           <span className="hidden sm:block h-0.75 flex-1 rounded-full bg-linear-to-r from-primary to-secondary" />

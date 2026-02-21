@@ -4,7 +4,7 @@
     "aboutUs": "ABOUT US",
     "biserOil": "BISER OIL",
     "packing": "PACKING",
-    "partners": "PARTNERS",
+    "workWithUs": "WORK WITH US",
     "contactUs": "CONTACT US"
   },
   "footer": {
@@ -14,7 +14,11 @@
     "saturday": "Saturday",
     "address": "Address",
     "information": "Information",
-    "copyright": "Ostrog-Luna | All Rights Reserved"
+    "copyright": "Ostrog-Luna | All Rights Reserved",
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy",
+    "termsOfUse": "Terms of Use",
+    "whistleblowerPolicy": "Whistleblower Policy"
   },
   "home": {
     "welcome": "Welcome to Ostrog Luna",
@@ -57,6 +61,7 @@
   },
   "packing": {
     "privateLabelSolutions": {
+      "pageLabel": "PACKING",
       "label": "Private Label Solutions",
       "subtitle": "Your Brand. Our Expertise.",
       "paragraphs": [
@@ -174,6 +179,85 @@
       }
     }
   },
+  "termsOfUse": {
+    "title": "Website Terms of Use",
+    "sections": {
+      "informational": {
+        "title": "Informational Purposes",
+        "content": "While Ostrog Luna strives to provide accurate and up-to-date information, we are not liable for any errors, omissions, or inaccuracies in the content displayed on this website."
+      },
+      "intellectualProperty": {
+        "title": "Intellectual Property",
+        "content": "All content, including text, logos, and images, is the exclusive intellectual property of Ostrog Luna. Unauthorized reproduction is prohibited."
+      },
+      "liability": {
+        "title": "Limitation of Liability",
+        "content": "Ostrog Luna shall not be liable for any direct or indirect loss resulting from the use of this website."
+      },
+      "jurisdiction": {
+        "title": "Jurisdiction",
+        "content": "Any disputes arising from the use of this website or these terms shall be subject to the exclusive jurisdiction of the competent courts of Strumica, Republic of North Macedonia."
+      }
+    },
+    "contactNote": "For any questions regarding these Terms of Use, please contact us at:"
+  },
+  "cookiePolicy": {
+    "title": "Cookie Policy",
+    "intro": "This website uses cookies to enhance your browsing experience and analyze our traffic.",
+    "sections": {
+      "strictlyNecessary": {
+        "title": "Strictly Necessary Cookies",
+        "content": "Essential for the website's basic functionality and security."
+      },
+      "analytical": {
+        "title": "Analytical Cookies",
+        "content": "We use tools like Google Analytics to understand user behavior and improve our services, subject to your prior consent."
+      },
+      "management": {
+        "title": "Management",
+        "content": "You may withdraw your consent or manage your cookie preferences at any time via your browser settings or our website's consent banner."
+      }
+    },
+    "contactNote": "For any questions regarding our Cookie Policy, please contact us at:"
+  },
+  "privacyPolicy": {
+    "title": "Privacy & Data Protection Policy",
+    "intro": "Ostrog Luna complies with the EU General Data Protection Regulation (GDPR) and the North Macedonia Law on Personal Data Protection.",
+    "sections": {
+      "dataController": {
+        "title": "Data Controller",
+        "content": "Ostrog Luna, Atanas Mucev no.2, 2400 Strumica, Republic of North Macedonia."
+      },
+      "purpose": {
+        "title": "Purpose of Processing",
+        "content": "We collect and process business contact information solely for the execution of trade contracts, KYC (Know Your Customer) compliance, responding to inquiries submitted through our contact form, and website optimization."
+      },
+      "rights": {
+        "title": "Your Rights",
+        "content": "Under applicable data protection legislation, you have the right to access, rectify, or erase your personal data, and the right to restrict or object to processing."
+      }
+    },
+    "contactNote": "For any data-related inquiries, please contact us at:"
+  },
+  "whistleblowerPolicy": {
+    "title": "Whistleblowing & Integrity Policy",
+    "intro": "Ostrog Luna is committed to the highest standards of transparency and ethical conduct. In accordance with applicable North Macedonia whistleblower protection legislation and the EU Whistleblower Protection Directive (2019/1937), we provide a secure channel for employees, contractors, and partners to report suspected misconduct, fraud, or environmental breaches.",
+    "sections": {
+      "confidentiality": {
+        "title": "Confidentiality",
+        "content": "All reports are handled with the highest level of anonymity and strict confidentiality."
+      },
+      "noRetaliation": {
+        "title": "No Retaliation",
+        "content": "We strictly prohibit any form of retaliation, discrimination, or adverse treatment against any person who reports a breach in good faith."
+      },
+      "reportingChannel": {
+        "title": "Reporting Channel",
+        "content": "Reports should be submitted to our Compliance Officer at:"
+      }
+    },
+    "contactNote": "For any questions regarding this policy, please contact us at:"
+  },
   "certifications": {
     "title": "Certifications",
     "description": "Our certifications demonstrate our dedication to quality, safety, and internationally recognized standards in edible oil production and packaging.",
@@ -183,5 +267,62 @@
       "iso": "Food safety management"
     },
     "button": "See all Certifications"
+  },
+  "contactUs": {
+    "hero": {
+      "label": "CONTACT US",
+      "title": "Have a question?",
+      "subtitle": "Write to us!"
+    },
+    "form": {
+      "namePlaceholder": "Name*",
+      "phonePlaceholder": "Phone",
+      "emailPlaceholder": "E-mail address*",
+      "messagePlaceholder": "Your message....",
+      "consent": "I consent to the processing of data for the purpose of telephone contact.",
+      "send": "Send",
+      "sending": "Sending...",
+      "successTitle": "Message sent!",
+      "successMessage": "Thank you for reaching out. We will get back to you shortly.",
+      "errorMessage": "Something went wrong. Please try again."
+    },
+    "contactInformation": {
+      "title": "Contact information",
+      "contacts": {
+        "mihailo": {
+          "name": "Mihailo Krajc",
+          "phone": "+389 71 908 000",
+          "email": "mihailo@ostrogluna.com"
+        },
+        "factory": {
+          "name": "Factory",
+          "phone": "+389 34 346 611",
+          "email": "info@ostrogluna.com"
+        },
+        "atanas": {
+          "name": "Atanas Pishev",
+          "phone": "+389 75 310 920",
+          "email": "atanas@ostrogluna.com"
+        },
+        "legal": {
+          "name": "Legal Service",
+          "phone": "+389 71 226 767",
+          "email": "katerina@ostrogluna.com"
+        }
+      }
+    },
+    "facility": {
+      "title": "Our Production Facility",
+      "address": {
+        "line1": "Atanas Mucev no.2",
+        "line2": "2400 Strumica",
+        "line3": "Republic of North Macedonia"
+      },
+      "hours": {
+        "mondayFriday": "Monday-Friday",
+        "saturday": "Saturday",
+        "time": "7:30 - 16:30"
+      }
+    }
   }
 }

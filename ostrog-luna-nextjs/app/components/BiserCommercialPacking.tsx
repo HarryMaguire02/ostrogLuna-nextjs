@@ -36,15 +36,15 @@ export default function BiserCommercialPacking({
   const next = () => setCurrent((i) => (i + 1) % items.length);
 
   return (
-    <section className="py-6">
+    <section className="py-8 sm:py-12">
       <Container>
         {/* Section heading with decorative lines */}
-        <div className="flex items-center gap-4 mb-8">
-          <span className="h-0.75 flex-1 rounded-full bg-linear-to-r from-secondary to-primary" />
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary sm:whitespace-nowrap text-center">
+        <div className="flex items-center gap-4 mb-8 sm:mb-12">
+          <span className="hidden sm:block h-0.75 flex-1 rounded-full bg-linear-to-r from-secondary to-primary" />
+          <h2 className="text-3xl md:text-4xl font-bold text-primary sm:whitespace-nowrap">
             {title}
           </h2>
-          <span className="h-0.75 flex-1 rounded-full bg-linear-to-r from-primary to-secondary" />
+          <span className="hidden sm:block h-0.75 flex-1 rounded-full bg-linear-to-r from-primary to-secondary" />
         </div>
 
         {/* Carousel */}

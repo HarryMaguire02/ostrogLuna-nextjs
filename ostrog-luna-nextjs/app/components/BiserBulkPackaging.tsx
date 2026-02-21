@@ -18,15 +18,15 @@ export default function BiserBulkPackaging({
   items,
 }: BiserBulkPackagingProps) {
   return (
-    <section className="py-6">
+    <section className="py-8 sm:py-12">
       <Container>
         {/* Section heading with decorative lines */}
-        <div className="flex items-center gap-4 mb-10">
-          <span className="h-0.75 flex-1 rounded-full bg-linear-to-r from-secondary to-primary hidden sm:block" />
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary sm:whitespace-nowrap text-center">
+        <div className="flex items-center gap-4 mb-8 sm:mb-12">
+          <span className="hidden sm:block h-0.75 flex-1 rounded-full bg-linear-to-r from-secondary to-primary" />
+          <h2 className="text-3xl md:text-4xl font-bold text-primary sm:whitespace-nowrap">
             {title}
           </h2>
-          <span className="h-0.75 flex-1 rounded-full bg-linear-to-r from-primary to-secondary hidden sm:block" />
+          <span className="hidden sm:block h-0.75 flex-1 rounded-full bg-linear-to-r from-primary to-secondary" />
         </div>
 
         {/* Items */}

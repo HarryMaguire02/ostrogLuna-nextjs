@@ -3,15 +3,40 @@ import BiserKeyBenefits from "../../components/BiserKeyBenefits";
 import BiserCommercialPacking from "../../components/BiserCommercialPacking";
 import BiserGuarantee from "../../components/BiserGuarantee";
 import BiserBulkPackaging from "../../components/BiserBulkPackaging";
+import Separator from "../../components/Separator";
 import { getDictionary } from "../../i18n";
 import type { Locale } from "../../i18n";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Biser Oil | OstrogLuna - Decades of Trust in Every Drop",
-  description:
-    "BISER is a high-quality, 100% natural and refined edible sunflower oil with over 27 years of trust on the market. Part of OstrogLuna – Strumica, North Macedonia.",
-};
+const BASE_URL = process.env.SITE_URL ?? "https://ostrogluna.com";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const isMk = lang === "mk";
+
+  return {
+    title: isMk
+      ? "Бисер Масло | Острог Луна - Децении Доверба во Секоја Капка"
+      : "Biser Oil | Ostrog Luna - Decades of Trust in Every Drop",
+    description: isMk
+      ? "БИСЕР е висококвалитетно, 100% природно рафинирано сончогледово масло со 27+ години доверба. Достапно во малопродажни шишиња од 750мл до 10Л и расфус контејнери."
+      : "BISER is a high-quality, 100% natural refined sunflower oil with 27+ years of trust. Available in retail bottles from 750ml to 10L and bulk containers.",
+    alternates: {
+      canonical: isMk ? `${BASE_URL}/mk/biser-oil` : `${BASE_URL}/biser-oil`,
+      languages: {
+        en: `${BASE_URL}/biser-oil`,
+        mk: `${BASE_URL}/mk/biser-oil`,
+      },
+    },
+    openGraph: {
+      url: isMk ? `${BASE_URL}/mk/biser-oil` : `${BASE_URL}/biser-oil`,
+    },
+  };
+}
 
 export default async function BiserOil({
   params,
@@ -30,6 +55,8 @@ export default async function BiserOil({
         imageSrc="/biser-hero-v2.png"
         imageAlt="BISER sunflower oil bottles with sunflower field background"
       />
+
+      <Separator />
 
       <BiserKeyBenefits
         title={dict.biserOil.keyBenefits.title}
@@ -62,6 +89,8 @@ export default async function BiserOil({
         ]}
       />
 
+      <Separator />
+
       <BiserCommercialPacking
         title={dict.biserOil.commercialPacking.title}
         productName={dict.biserOil.commercialPacking.productName}
@@ -82,12 +111,16 @@ export default async function BiserOil({
         ]}
       />
 
+      <Separator />
+
       <BiserGuarantee
         title={dict.biserOil.guarantee.title}
         paragraphs={dict.biserOil.guarantee.paragraphs}
         imageSrc="/biser-guarantee.png"
         imageAlt="BISER sunflower oil bottles - A Guarantee of Quality and Trust"
       />
+
+      <Separator />
 
       <BiserBulkPackaging
         title={dict.biserOil.bulkPackaging.title}

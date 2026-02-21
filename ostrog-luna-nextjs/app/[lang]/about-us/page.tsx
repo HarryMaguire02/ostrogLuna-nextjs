@@ -1,8 +1,40 @@
+import type { Metadata } from "next";
 import ExpertiseShowcase from "../../components/ExpertiseShowcase";
 import OurJourney from "../../components/OurJourney";
 import Certifications from "../../components/Certifications";
+import Separator from "../../components/Separator";
 import { getDictionary } from "../../i18n";
 import type { Locale } from "../../i18n";
+
+const BASE_URL = process.env.SITE_URL ?? "https://ostrogluna.com";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ lang: string }>;
+}): Promise<Metadata> {
+  const { lang } = await params;
+  const isMk = lang === "mk";
+
+  return {
+    title: isMk
+      ? "За Нас | Острог Луна - Нашата Приказна и Сертификати"
+      : "About Us | Ostrog Luna - Our Story & Certifications",
+    description: isMk
+      ? "Дознајте за патувањето, експертизата и меѓународните сертификати на Острог Луна (HACCP, IFS, ISO 22000). 500+ деловни партнери, 50М литри годишно."
+      : "Learn about Ostrog Luna's journey, expertise, and certifications (HACCP, IFS, ISO 22000). 500+ business partners, 50M liters of refined sunflower oil annually.",
+    alternates: {
+      canonical: isMk ? `${BASE_URL}/mk/about-us` : `${BASE_URL}/about-us`,
+      languages: {
+        en: `${BASE_URL}/about-us`,
+        mk: `${BASE_URL}/mk/about-us`,
+      },
+    },
+    openGraph: {
+      url: isMk ? `${BASE_URL}/mk/about-us` : `${BASE_URL}/about-us`,
+    },
+  };
+}
 
 export default async function AboutUs({
   params,
@@ -26,6 +58,8 @@ export default async function AboutUs({
           { value: "50M", label: dict.expertise.stats.litersAnnually },
         ]}
       />
+
+      <Separator />
 
       <OurJourney
         title={dict.journey.title}
@@ -56,6 +90,8 @@ export default async function AboutUs({
           },
         ]}
       />
+
+      <Separator />
 
       <Certifications
         title={dict.certifications.title}

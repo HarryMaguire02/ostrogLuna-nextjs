@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import Container from "./Container";
-import type { Dictionary } from "../i18n";
+import type { Dictionary, Locale } from "../i18n";
 
-export default function Footer({ dict }: { dict: Dictionary }) {
+export default function Footer({ lang, dict }: { lang: Locale; dict: Dictionary }) {
+  const prefix = lang === "en" ? "" : `/${lang}`;
   return (
     <footer className="bg-primary text-white">
       <Container className="pt-6 pb-4">
@@ -25,7 +26,7 @@ export default function Footer({ dict }: { dict: Dictionary }) {
               </p>
               <div className="flex gap-3">
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/ostrogluna"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Follow us on Facebook"
@@ -39,7 +40,7 @@ export default function Footer({ dict }: { dict: Dictionary }) {
                   />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/ostrog_luna"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Follow us on Instagram"
@@ -114,11 +115,27 @@ export default function Footer({ dict }: { dict: Dictionary }) {
           </div>
         </div>
 
-        {/* Copyright */}
+        {/* Policy links & Copyright */}
         <hr className="border-t-2 border-secondary mt-4" />
-        <p className="text-center text-sm text-white/60 py-4">
-          &copy;{new Date().getFullYear()} {dict.footer.copyright}
-        </p>
+        <div className="flex flex-col items-center gap-3 pt-4">
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+            <Link href={`${prefix}/privacy-policy`} className="text-xs text-white/60 hover:text-white transition-colors">
+              {dict.footer.privacyPolicy}
+            </Link>
+            <Link href={`${prefix}/cookie-policy`} className="text-xs text-white/60 hover:text-white transition-colors">
+              {dict.footer.cookiePolicy}
+            </Link>
+            <Link href={`${prefix}/terms-of-use`} className="text-xs text-white/60 hover:text-white transition-colors">
+              {dict.footer.termsOfUse}
+            </Link>
+            <Link href={`${prefix}/whistleblower-policy`} className="text-xs text-white/60 hover:text-white transition-colors">
+              {dict.footer.whistleblowerPolicy}
+            </Link>
+          </div>
+          <p className="text-sm text-white/60">
+            &copy;{new Date().getFullYear()} {dict.footer.copyright}
+          </p>
+        </div>
       </Container>
     </footer>
   );

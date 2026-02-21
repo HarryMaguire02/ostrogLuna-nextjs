@@ -24,7 +24,7 @@ export default function ExpertiseShowcase({
   stats,
 }: ExpertiseShowcaseProps) {
   return (
-    <section className="py-6">
+    <section className="py-8 sm:py-12">
       <Container>
         <div className="flex flex-col sm:flex-row items-center gap-8 sm:gap-12">
           {/* Image */}
@@ -49,11 +49,11 @@ export default function ExpertiseShowcase({
             </p>
 
             {/* Title with accent line */}
-            <div className="flex items-center gap-4 mb-6">
+            <div className="flex items-center gap-4 mb-6 sm:mb-8">
               <h2 className="text-3xl md:text-4xl font-bold text-primary whitespace-nowrap">
                 {title}
               </h2>
-              <span className="h-0.75 w-full rounded-full bg-linear-to-r from-primary to-secondary" />
+              <span className="hidden sm:block h-0.75 w-full rounded-full bg-linear-to-r from-primary to-secondary" />
             </div>
 
             {/* Paragraphs */}

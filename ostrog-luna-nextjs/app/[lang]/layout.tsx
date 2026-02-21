@@ -23,7 +23,7 @@ export default async function LangLayout({
       <body className="antialiased bg-white">
         <ScrollHeader lang={lang} dict={dict} />
         <main>{children}</main>
-        <Footer dict={dict} />
+        <Footer lang={lang} dict={dict} />
       </body>
     </html>
   );

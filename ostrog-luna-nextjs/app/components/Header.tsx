@@ -26,7 +26,7 @@ export default function Header({
     { href: `${prefix}/about-us`, label: dict.nav.aboutUs },
     { href: `${prefix}/biser-oil`, label: dict.nav.biserOil },
     { href: `${prefix}/packing`, label: dict.nav.packing },
-    { href: `${prefix}/partners`, label: dict.nav.partners },
+    { href: `${prefix}/work-with-us`, label: dict.nav.workWithUs },
     { href: `${prefix}/contact-us`, label: dict.nav.contactUs },
   ];
 

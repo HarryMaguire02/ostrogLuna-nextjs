@@ -26,15 +26,15 @@ export default function OurJourney({ title, milestones }: OurJourneyProps) {
   }
 
   return (
-    <section className="py-6">
+    <section className="py-8 sm:py-12">
       <Container>
         {/* Section heading with decorative lines */}
-        <div className="flex items-center gap-4 mb-4 md:mb-6">
-          <span className="h-0.75 flex-1 rounded-full bg-linear-to-r from-secondary to-primary" />
-          <h2 className="text-3xl md:text-4xl font-bold text-primary whitespace-nowrap">
+        <div className="flex items-center gap-4 mb-8 sm:mb-12">
+          <span className="hidden sm:block h-0.75 flex-1 rounded-full bg-linear-to-r from-secondary to-primary" />
+          <h2 className="text-3xl md:text-4xl font-bold text-primary sm:whitespace-nowrap">
             {title}
           </h2>
-          <span className="h-0.75 flex-1 rounded-full bg-linear-to-r from-primary to-secondary" />
+          <span className="hidden sm:block h-0.75 flex-1 rounded-full bg-linear-to-r from-primary to-secondary" />
         </div>
 
         {/* Timeline */}
