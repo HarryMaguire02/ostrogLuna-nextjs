@@ -43,10 +43,10 @@ export default function BiserOilHero({
 
             {/* Title with accent line */}
             <div className="flex items-center gap-4 mb-6">
-              <h1 className="text-3xl md:text-4xl font-bold text-primary whitespace-pre-line">
+              <h1 className="text-3xl md:text-4xl font-bold text-primary sm:whitespace-pre-line sm:shrink-0">
                 {title}
               </h1>
-              <span className="h-0.75 w-full rounded-full bg-linear-to-r from-primary to-secondary hidden sm:block" />
+              <span className="h-0.75 flex-1 rounded-full bg-linear-to-r from-primary to-secondary hidden sm:block" />
             </div>
 
             {/* Paragraphs */}

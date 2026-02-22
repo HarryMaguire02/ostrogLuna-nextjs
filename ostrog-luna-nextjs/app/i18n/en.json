@@ -30,12 +30,13 @@
     "paragraphs": [
       "We are a producer of high-quality edible oils with a strong focus on sunflower oil and carefully selected raw materials. Our production process is built on consistency, quality control, and respect for natural ingredients.",
       "From seed selection to final bottling, every step is carefully monitored to ensure purity, stability, and reliable performance in everyday cooking and professional use.",
-      "Our goal is simple — to deliver oils that meet high quality standards and earn long-term trust."
+      "Our goal is simple — to deliver oils that meet high quality standards and earn long-term trust.",
+      "We are only company in North Macedonia with IFS certificate"
     ],
     "stats": {
       "businessPartners": "Business\nPartners",
       "exportMarkets": "Export\nMarkets",
-      "litersAnnually": "Liters\nAnnually"
+      "litersAnnually": "Refined\nper day"
     }
   },
   "journey": {
@@ -100,8 +101,7 @@
         "4750ml": "4750 mL",
         "5L": "5 L",
         "10L": "10 L",
-        "40ft": "40ft Container flexi tank",
-        "20ft": "20ft Container flexi tank",
+        "26000L": "Flexitank 26000 L Capacity",
         "truck": "Food-grade tanker truck"
       }
     },
@@ -323,6 +323,73 @@
         "saturday": "Saturday",
         "time": "7:30 - 16:30"
       }
+    }
+  },
+  "workWithUs": {
+    "hero": {
+      "label": "WORK WITH US",
+      "title": "Work With a Trusted\nEdible Oil Partner",
+      "paragraph": "Supplying retailers, distributors and food industry partners across markets with reliable private label and bulk oil solutions.",
+      "cta": "Contact Us"
+    },
+    "trustedPartners": {
+      "title": "Trusted by Retailers & Distributors",
+      "paragraphs": [
+        "We collaborate with retail chains, wholesalers and food distributors who rely on consistent quality and dependable supply.",
+        "Our experience includes cooperation with supermarket chains, private label programs and international buyers."
+      ]
+    },
+    "whyChooseUs": {
+      "title": "Why Choose Ostrog-Luna",
+      "features": {
+        "production": {
+          "title": "Reliable Production Capacity",
+          "description": "High-volume production ensures stable supply even for large-scale orders."
+        },
+        "privateLabel": {
+          "title": "Private Label Expertise",
+          "description": "We support full private label development from filling to packaging design."
+        },
+        "international": {
+          "title": "International Experience",
+          "description": "Export-oriented production aligned with international food standards."
+        },
+        "packaging": {
+          "title": "Flexible Packaging Solutions",
+          "description": "From retail bottles to bulk shipments and flexitanks."
+        }
+      }
+    },
+    "experienceAndScale": {
+      "title": "Built on Experience & Scale",
+      "stats": {
+        "years":         { "value": "27",  "label": "Years in\nproduction" },
+        "exportMarkets": { "value": "87",  "label": "Export markets\nserved" },
+        "tonsProduced":  { "value": "10M", "label": "Tons produced\nannually" },
+        "privateLabel":  { "value": "117", "label": "Private label\nprojects completed" }
+      }
+    },
+    "simpleCooperation": {
+      "title": "Simple & Transparent Cooperation",
+      "steps": {
+        "inquiry": {
+          "title": "Inquiry & Needs Analysis",
+          "description": "We analyze your volume and packaging requirements."
+        },
+        "offer": {
+          "title": "Offer & Packaging Proposal",
+          "description": "Custom private label design and logistics planning."
+        },
+        "production": {
+          "title": "Production & Quality Control",
+          "description": "High-speed filling and rigorous quality control."
+        },
+        "delivery": {
+          "title": "Delivery & Ongoing Support",
+          "description": "Global logistics support and ongoing supply."
+        }
+      },
+      "cta": "Contact Us"
     }
   }
 }

@@ -128,14 +128,9 @@ export default async function Packing({
             label: dict.packing.productRange.products["10L"],
           },
           {
-            imageSrc: "/range-40ft.png",
-            imageAlt: "40ft shipping container",
-            label: dict.packing.productRange.products["40ft"],
-          },
-          {
             imageSrc: "/range-20ft.png",
-            imageAlt: "20ft shipping container",
-            label: dict.packing.productRange.products["20ft"],
+            imageAlt: "Flexitank 26000L",
+            label: dict.packing.productRange.products["26000L"],
           },
           {
             imageSrc: "/range-truck.png",

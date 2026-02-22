@@ -50,12 +50,12 @@ export default async function AboutUs({
         label={dict.expertise.label}
         title={dict.expertise.title}
         paragraphs={dict.expertise.paragraphs}
-        imageSrc="/factory-sunflowers.png"
+        imageSrc="/factory-sunflowers-v2.png"
         imageAlt="Ostrog Luna factory with sunflower fields"
         stats={[
           { value: "500+", label: dict.expertise.stats.businessPartners },
           { value: "20", label: dict.expertise.stats.exportMarkets },
-          { value: "50M", label: dict.expertise.stats.litersAnnually },
+          { value: "200MT", label: dict.expertise.stats.litersAnnually },
         ]}
       />
 
