@@ -21,8 +21,35 @@
     "whistleblowerPolicy": "Whistleblower Policy"
   },
   "home": {
-    "welcome": "Welcome to Ostrog Luna",
-    "subtitle": "Premium sunflower oil producer - Homepage coming soon."
+    "hero": {
+      "title": "Pure Energy\nfrom Nature",
+      "subtitle": "High-quality sunflower oil and carefully selected edible oils, crafted for everyday cooking and professional use.",
+      "ctaExplore": "Explore Our Oils",
+      "ctaContact": "Contact Us",
+      "features": {
+        "quality": "Quality Packaging",
+        "production": "Modern Production",
+        "distribution": "Fast Distribution"
+      }
+    },
+    "products": {
+      "title": "Our Products",
+      "items": {
+        "1l":    { "name": "Sunflower oil refined", "size": "PET bottles of 1 L" },
+        "10l":   { "name": "Sunflower oil refined", "size": "PET bottles of 10 L" },
+        "850ml": { "name": "Sunflower oil refined", "size": "PET bottles of 850 mL" }
+      }
+    },
+    "productionToDelivery": {
+      "title": "From Production to Delivery",
+      "subtitle": "A complete solution for refining, packaging, and bulk oil transportation. Designed for large-scale production and international delivery. Reliable infrastructure for food-grade oil distribution.",
+      "items": {
+        "bottleSizes":    { "label": "Multiple Bottle Sizes",      "description": "850 mL – 10 L securely packaged" },
+        "capacity":       { "label": "High Production Capacity",   "description": "Up to 100 tons per 24 hours" },
+        "truckTransport": { "label": "Tank Truck Transport",        "description": "Safe bulk oil delivery" },
+        "flexitank":      { "label": "FLEXITANK System",            "description": "Food-grade international transport" }
+      }
+    }
   },
   "expertise": {
     "label": "ABOUT US",
