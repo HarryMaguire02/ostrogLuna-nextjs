@@ -56,7 +56,7 @@ export default function BiserBulkPackaging({
               {/* Text */}
               <div className="w-full sm:w-1/2">
                 <span className="hidden sm:block sm:w-20 md:w-28 h-0.75 bg-secondary rounded-full mb-4" />
-                <p className="text-primary leading-relaxed text-center sm:text-left">
+                <p className="text-text leading-relaxed text-center sm:text-left">
                   {item.description}
                 </p>
               </div>

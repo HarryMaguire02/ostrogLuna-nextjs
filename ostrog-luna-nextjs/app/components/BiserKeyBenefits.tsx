@@ -41,7 +41,7 @@ export default function BiserKeyBenefits({
                   sizes="64px"
                 />
               </div>
-              <p className="text-primary text-sm font-medium leading-snug">
+              <p className="text-text/50 text-sm font-medium leading-snug">
                 {item.label}
               </p>
             </div>

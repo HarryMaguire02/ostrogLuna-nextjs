@@ -165,7 +165,7 @@ export default function BiserCommercialPacking({
                 />
               </div>
               <p className="text-sm font-bold text-primary">{slot.label}</p>
-              <p className="text-sm text-primary">{items[current].detailValues[i]}</p>
+              <p className="text-sm text-text">{items[current].detailValues[i]}</p>
             </div>
           ))}
         </div>

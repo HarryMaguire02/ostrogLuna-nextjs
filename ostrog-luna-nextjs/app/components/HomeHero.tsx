@@ -35,14 +35,15 @@ export default function HomeHero({
 
   return (
     <section className="relative overflow-hidden py-8 sm:py-12 sm:min-h-175">
-      {/* Background image — desktop only */}
-      <div className="hidden sm:block absolute inset-0">
+      {/* Background image — desktop only, scales to section height */}
+      <div className="hidden sm:block absolute inset-y-0 left-0 right-0">
         <Image
           src={imageSrc}
           alt={imageAlt}
-          fill
-          className="object-cover object-right"
-          sizes="100vw"
+          width={1440}
+          height={1024}
+          className="h-full w-auto max-w-none ml-auto"
+          sizes="100vh"
           priority
         />
       </div>
@@ -58,7 +59,7 @@ export default function HomeHero({
             </h1>
 
             {/* Subtitle */}
-            <p className="text-primary leading-relaxed mb-8">{subtitle}</p>
+            <p className="text-text leading-relaxed mb-8">{subtitle}</p>
 
             {/* CTAs */}
             <div className="flex flex-wrap gap-4 mb-10">
@@ -70,7 +71,7 @@ export default function HomeHero({
               </Link>
               <Link
                 href={`/${lang}/contact-us`}
-                className="inline-block bg-secondary text-primary font-bold px-8 py-3 rounded-full hover:bg-primary/5 transition-colors"
+                className="inline-block bg-secondary text-primary font-bold px-8 py-3 rounded-full hover:bg-secondary/90 transition-colors"
               >
                 {ctaContact}
               </Link>

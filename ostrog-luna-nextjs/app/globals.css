@@ -1,6 +1,9 @@
 @import "tailwindcss";
 
 @theme {
+  /* Body text */
+  --color-text: #000000;
+
   /* Primary - Dark Navy Blue */
   --color-primary: #303C78;
   --color-primary-light: #2A4A73;

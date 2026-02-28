@@ -48,7 +48,7 @@ export default function WhatWeOffer({
                   sizes="64px"
                 />
               </div>
-              <p className="text-primary text-sm leading-snug">
+              <p className="text-text text-sm leading-snug">
                 {item.text}
               </p>
             </div>

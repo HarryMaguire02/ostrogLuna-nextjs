@@ -33,7 +33,7 @@ export default function Certifications({
         </div>
 
         {/* Description */}
-        <p className="text-primary sm:text-center max-w-2xl mx-auto mb-10 leading-relaxed">
+        <p className="text-text sm:text-center max-w-2xl mx-auto mb-10 leading-relaxed">
           {description}
         </p>
 

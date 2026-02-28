@@ -56,7 +56,7 @@ export default function ProductionExcellence({
               </h3>
             );
             const description = (
-              <p className="text-primary text-sm leading-relaxed">
+              <p className="text-text text-sm leading-relaxed">
                 {feature.description}
               </p>
             );

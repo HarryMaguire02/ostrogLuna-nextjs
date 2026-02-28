@@ -26,25 +26,25 @@ export default function HomeProducts({ title, products }: HomeProductsProps) {
           <span className="hidden sm:block h-0.75 flex-1 rounded-full bg-linear-to-r from-primary to-secondary" />
         </div>
 
-        {/* Product cards — extra top margin accommodates image overflow above card */}
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-12 justify-items-center">
+        {/* Product cards */}
+        <div className="grid grid-cols-1 max-w-250 sm:grid-cols-3 gap-5 md:gap-10 mx-auto justify-items-center">
           {products.map((product, i) => (
             <div
               key={i}
-              className="relative max-w-50 border-2 border-secondary bg-secondary/20 rounded-lg px-10 pb-15 pt-15"
+              className="relative w-full max-w-50 md:max-w-60 lg:max-w-72 h-48 md:h-56 lg:h-64 border-2 border-secondary bg-secondary/20 rounded-lg px-10 md:px-14 lg:px-16 flex flex-col justify-center"
             >
-              {/* Image — absolutely positioned, overflows above card top edge */}
-              <div className="absolute top-5 left-0 -translate-x-1/2 w-20 h-40">
+              {/* Image — centered vertically, anchored to left border */}
+              <div className="absolute left-0 top-1/2 -translate-x-1/2 -translate-y-1/2 w-20 h-40 md:w-24 md:h-48 lg:w-28 lg:h-56">
                 <Image
                   src={product.imageSrc}
                   alt={product.imageAlt}
                   fill
                   className="object-contain"
-                  sizes="80px"
+                  sizes="(max-width: 768px) 80px, (max-width: 1024px) 96px, 112px"
                 />
               </div>
-              <p className="text-sm font-semibold text-primary text-center">{product.name}</p>
-              <p className="text-sm text-primary/70 text-center">{product.size}</p>
+              <p className="text-md md:text-lg lg:text-xl font-semibold text-text text-center">{product.name}</p>
+              <p className="text-sm md:text-base text-text/70 text-center">{product.size}</p>
             </div>
           ))}
         </div>

@@ -54,7 +54,7 @@ export default function WorkWithUsHero({
             </div>
 
             {/* Paragraph */}
-            <p className="text-primary leading-relaxed mb-8">{paragraph}</p>
+            <p className="text-text leading-relaxed mb-8">{paragraph}</p>
 
             {/* CTA */}
             <Link

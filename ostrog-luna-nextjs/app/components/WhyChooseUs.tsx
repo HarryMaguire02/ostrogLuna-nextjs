@@ -44,7 +44,7 @@ export default function WhyChooseUs({ title, features, imageSrc, imageAlt }: Why
               <h3 className="text-sm font-bold text-primary mb-2">
                 {feature.title}
               </h3>
-              <p className="text-primary text-sm leading-snug">
+              <p className="text-text text-sm leading-snug">
                 {feature.description}
               </p>
             </div>

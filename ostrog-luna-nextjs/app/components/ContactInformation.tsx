@@ -46,8 +46,8 @@ export default function ContactInformation({ dict }: Props) {
                 />
               </div>
               <p className="font-bold text-primary">{contact.name}</p>
-              <p className="text-sm text-primary">{contact.phone}</p>
-              <p className="text-sm text-primary break-all">{contact.email}</p>
+              <p className="text-sm text-text">{contact.phone}</p>
+              <p className="text-sm text-text break-all">{contact.email}</p>
             </div>
           ))}
         </div>

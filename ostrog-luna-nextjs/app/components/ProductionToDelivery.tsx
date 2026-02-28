@@ -33,14 +33,15 @@ export default function ProductionToDelivery({
 }: ProductionToDeliveryProps) {
   return (
     <section className="relative overflow-hidden py-8 sm:py-12">
-      {/* Background image — desktop only */}
-      <div className="hidden sm:block absolute inset-0">
+      {/* Background image — desktop only, scales to section height */}
+      <div className="hidden sm:block absolute inset-y-0 left-0 right-0">
         <Image
           src={backgroundSrc}
           alt={backgroundAlt}
-          fill
-          className="object-cover"
-          sizes="100vw"
+          width={1440}
+          height={1024}
+          className="h-full w-auto max-w-none ml-auto"
+          sizes="100vh"
         />
       </div>
 
@@ -52,7 +53,7 @@ export default function ProductionToDelivery({
           </h2>
           <span className="hidden sm:block h-0.75 flex-1 rounded-full bg-linear-to-r from-primary to-secondary" />
         </div>
-        <p className="text-primary leading-relaxed sm:max-w-2xl">{subtitle}</p>
+        <p className="text-text leading-relaxed sm:max-w-2xl">{subtitle}</p>
 
         {/* Desktop items panel — positioned within container padding */}
         <div className="hidden sm:block relative h-[460px]">
@@ -75,45 +76,50 @@ export default function ProductionToDelivery({
                 <p className="text-xs md:text-sm font-bold text-primary leading-tight drop-shadow-sm">
                   {item.label}
                 </p>
-                <p className="text-xs text-primary/80 mt-0.5 drop-shadow-sm">{item.description}</p>
+                <p className="text-xs text-primary mt-0.5 drop-shadow-sm">{item.description}</p>
               </div>
             </div>
           ))}
         </div>
       </Container>
 
-      {/* Mobile — background image below content */}
-      <div className="sm:hidden mt-6 relative w-full aspect-4/3">
-        <Image
-          src={backgroundSrc}
-          alt={backgroundAlt}
-          fill
-          className="object-cover"
-          sizes="100vw"
-        />
-      </div>
 
-      {/* Mobile — 2×2 grid */}
+      {/* Mobile — grid then image pulled up to half-overlap */}
       <div className="sm:hidden mt-6">
-        <Container>
-          <div className="grid grid-cols-2 gap-6">
-            {items.map((item, i) => (
-              <div key={i} className="flex flex-col items-center text-center">
-                <div className="relative w-24 h-24 rounded-full overflow-hidden border-2 border-primary/20 mb-3">
-                  <Image
-                    src={item.imageSrc}
-                    alt={item.imageAlt}
-                    fill
-                    className="object-cover"
-                    sizes="96px"
-                  />
+        {/* Grid — z-10 so it stays above the image in the overlap zone */}
+        <div className="relative z-10">
+          <Container className="py-6">
+            <div className="grid grid-cols-2 gap-6">
+              {items.map((item, i) => (
+                <div key={i} className="flex flex-col items-center text-center">
+                  <div className="relative w-24 h-24 rounded-full overflow-hidden border-2 border-primary/20 mb-3">
+                    <Image
+                      src={item.imageSrc}
+                      alt={item.imageAlt}
+                      fill
+                      className="object-cover"
+                      sizes="96px"
+                    />
+                  </div>
+                  <p className="text-sm font-bold text-primary">{item.label}</p>
+                  <p className="text-xs text-text mt-1">{item.description}</p>
                 </div>
-                <p className="text-sm font-bold text-primary">{item.label}</p>
-                <p className="text-xs text-primary/70 mt-1">{item.description}</p>
-              </div>
-            ))}
-          </div>
-        </Container>
+              ))}
+            </div>
+          </Container>
+        </div>
+
+        {/* Image — negative margin pulls it up ~half its height into the grid */}
+        <div className="relative w-full aspect-video -mt-28">
+          <Image
+            src={backgroundSrc}
+            alt={backgroundAlt}
+            fill
+            className="object-cover object-bottom"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-white/30" />
+        </div>
       </div>
     </section>
   );

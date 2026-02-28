@@ -52,7 +52,7 @@ export default function BiserOilHero({
             {/* Paragraphs */}
             <div className="space-y-4">
               {paragraphs.map((text, i) => (
-                <p key={i} className="text-primary leading-relaxed">
+                <p key={i} className="text-text leading-relaxed">
                   {text}
                 </p>
               ))}

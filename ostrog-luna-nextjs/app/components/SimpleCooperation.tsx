@@ -42,7 +42,7 @@ export default function SimpleCooperation({
                 <h3 className="text-sm font-bold text-primary mb-2">
                   {step.title}
                 </h3>
-                <p className="text-primary text-sm leading-relaxed">
+                <p className="text-text text-sm leading-relaxed">
                   {step.description}
                 </p>
               </div>

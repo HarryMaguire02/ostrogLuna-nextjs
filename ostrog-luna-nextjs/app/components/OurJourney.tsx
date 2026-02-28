@@ -65,7 +65,7 @@ export default function OurJourney({ title, milestones }: OurJourneyProps) {
                       <h3 className="text-sm md:text-2xl font-bold text-primary uppercase tracking-wide mb-2">
                         {milestone.title}
                       </h3>
-                      <p className="text-primary/70 text-base">
+                      <p className="text-text text-base">
                         {milestone.description}
                       </p>
                     </div>
@@ -103,7 +103,7 @@ export default function OurJourney({ title, milestones }: OurJourneyProps) {
                       <h3 className="text-sm md:text-2xl font-bold text-primary uppercase tracking-wide mb-2">
                         {milestone.title}
                       </h3>
-                      <p className="text-primary/70 text-sm md:text-base">
+                      <p className="text-text text-sm md:text-base">
                         {milestone.description}
                       </p>
                     </div>

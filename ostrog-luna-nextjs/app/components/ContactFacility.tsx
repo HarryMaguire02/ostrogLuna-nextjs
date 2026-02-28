@@ -31,7 +31,7 @@ export default function ContactFacility({ dict }: Props) {
                 className="object-contain"
               />
             </div>
-            <address className="not-italic text-primary leading-relaxed">
+            <address className="not-italic text-text leading-relaxed">
               <p>{dict.address.line1}</p>
               <p>{dict.address.line2}</p>
               <p>{dict.address.line3}</p>
@@ -49,7 +49,7 @@ export default function ContactFacility({ dict }: Props) {
                 className="object-contain"
               />
             </div>
-            <div className="flex gap-4 text-primary">
+            <div className="flex gap-4 text-text">
               <div className="leading-relaxed">
                 <p>{dict.hours.mondayFriday}</p>
                 <p>{dict.hours.saturday}</p>
