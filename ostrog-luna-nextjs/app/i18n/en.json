@@ -117,7 +117,22 @@
     },
     "productionInAction": {
       "title": "Our Production in Action",
-      "subtitle": "A closer look at our technology, processes and quality standards"
+      "subtitle": "A closer look at our technology, processes and quality standards",
+      "body": "From raw sunflower seeds to refined, bottled oil — every stage of our production line is engineered for precision and consistency. Watch our machinery at work as it transforms crude oil into the premium product you trust.",
+      "highlights": {
+        "precision": {
+          "title": "Precision Filling",
+          "description": "Automated filling lines deliver accurate volumes and hermetic sealing on every bottle, ensuring consistency across every batch."
+        },
+        "hygiene": {
+          "title": "Food-Grade Standards",
+          "description": "Our facility operates under strict hygiene protocols certified by HACCP, IFS, and ISO 22000 — the highest benchmarks in food safety."
+        },
+        "capacity": {
+          "title": "100 Tons Per Day",
+          "description": "Our high-capacity line runs continuously to fulfill large-scale private label and bulk orders on time, every time."
+        }
+      }
     },
     "productRange": {
       "title": "Product Range",

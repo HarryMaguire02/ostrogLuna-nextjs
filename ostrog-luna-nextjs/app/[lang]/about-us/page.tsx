@@ -101,19 +101,21 @@ export default async function AboutUs({
             imageSrc: "/HACCP-certificate.png",
             imageAlt: "HACCP - Hazard Analysis Critical Control Point certification",
             label: dict.certifications.certificates.haccp,
+            pdfSrc: "/pdf/HACCP.pdf",
           },
           {
             imageSrc: "/IFS-certificate.png",
             imageAlt: "IFS Food - International Featured Standards certification",
             label: dict.certifications.certificates.ifs,
+            pdfSrc: "/pdf/IFS.pdf",
           },
           {
             imageSrc: "/ISO-certificate.png",
             imageAlt: "ISO 22000:2018 - Food Safety Management System certification",
             label: dict.certifications.certificates.iso,
+            pdfSrc: "/pdf/ISO.pdf",
           },
         ]}
-        buttonLabel={dict.certifications.button}
       />
     </div>
   );

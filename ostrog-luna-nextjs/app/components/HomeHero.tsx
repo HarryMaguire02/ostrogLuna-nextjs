@@ -54,8 +54,8 @@ export default function HomeHero({
           <div className="w-full sm:max-w-[30%]">
             {/* Title — first line bold, second line light */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary mb-4 leading-tight">
-              <span className="block font-bold">{titleBold}</span>
-              <span className="block font-light">{titleLight}</span>
+              <span className="block font-bold whitespace-nowrap">{titleBold}</span>
+              <span className="block font-light whitespace-nowrap">{titleLight}</span>
             </h1>
 
             {/* Subtitle */}

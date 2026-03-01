@@ -32,7 +32,7 @@ export default function ProductionExcellence({
         </div>
 
         {/* Subtitle */}
-        <p className="text-primary sm:text-center mb-10">
+        <p className="text-primary sm:text-center mb-8">
           {subtitle}
         </p>
 

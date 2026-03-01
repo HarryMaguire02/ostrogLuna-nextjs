@@ -5,20 +5,19 @@ interface Certificate {
   imageSrc: string;
   imageAlt: string;
   label: string;
+  pdfSrc: string;
 }
 
 interface CertificationsProps {
   title: string;
   description: string;
   certificates: Certificate[];
-  buttonLabel: string;
 }
 
 export default function Certifications({
   title,
   description,
   certificates,
-  buttonLabel,
 }: CertificationsProps) {
   return (
     <section className="py-8 sm:py-12">
@@ -38,11 +37,13 @@ export default function Certifications({
         </p>
 
         {/* Certificate cards */}
-        <div className="flex flex-wrap justify-center gap-8 mb-10">
+        <div className="flex flex-wrap justify-center gap-8">
           {certificates.map((cert, i) => (
-            <div
+            <a
               key={i}
-              className="flex flex-col items-center rounded-2xl border-2 border-primary px-3 py-4 shadow-sm hover:shadow-lg transition-shadow w-56"
+              href={cert.pdfSrc}
+              download
+              className="flex flex-col items-center rounded-2xl border-2 border-primary px-3 py-4 shadow-sm hover:shadow-lg hover:border-secondary transition-all w-56"
             >
               <div className="relative w-44 h-44 mb-6">
                 <Image
@@ -57,18 +58,8 @@ export default function Certifications({
               <p className="text-primary text-sm font-medium text-center leading-snug">
                 {cert.label}
               </p>
-            </div>
+            </a>
           ))}
-        </div>
-
-        {/* CTA Button */}
-        <div className="flex justify-center">
-          <a
-            href="#certifications"
-            className="inline-block bg-secondary text-primary font-bold px-8 py-3 rounded-full hover:bg-secondary-light transition-colors"
-          >
-            {buttonLabel}
-          </a>
         </div>
       </Container>
     </section>

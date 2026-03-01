@@ -28,9 +28,6 @@ export const metadata: Metadata = {
     // TODO: Add og:image once designer provides the asset (1200x630px)
     // images: [{ url: "/og-image.png", width: 1200, height: 630 }],
   },
-  icons: {
-    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
-  },
   robots: {
     index: true,
     follow: true,

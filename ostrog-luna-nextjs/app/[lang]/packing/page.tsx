@@ -172,6 +172,21 @@ export default async function Packing({
       <ProductionInAction
         title={dict.packing.productionInAction.title}
         subtitle={dict.packing.productionInAction.subtitle}
+        body={dict.packing.productionInAction.body}
+        highlights={[
+          {
+            title: dict.packing.productionInAction.highlights.precision.title,
+            description: dict.packing.productionInAction.highlights.precision.description,
+          },
+          {
+            title: dict.packing.productionInAction.highlights.hygiene.title,
+            description: dict.packing.productionInAction.highlights.hygiene.description,
+          },
+          {
+            title: dict.packing.productionInAction.highlights.capacity.title,
+            description: dict.packing.productionInAction.highlights.capacity.description,
+          },
+        ]}
         videoSrc="/product-in-action.mp4"
       />
     </div>

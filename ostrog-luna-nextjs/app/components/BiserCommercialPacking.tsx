@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Container from "./Container";
+import { AnimatePresence, motion } from "framer-motion";
 
 interface DetailSlot {
   iconSrc: string;
@@ -23,6 +24,21 @@ interface BiserCommercialPackingProps {
   items: PackingItem[];
 }
 
+const slideVariants = {
+  enter: (direction: number) => ({
+    x: direction > 0 ? "100%" : "-100%",
+    opacity: 0,
+  }),
+  center: {
+    x: 0,
+    opacity: 1,
+  },
+  exit: (direction: number) => ({
+    x: direction > 0 ? "-100%" : "100%",
+    opacity: 0,
+  }),
+};
+
 export default function BiserCommercialPacking({
   title,
   productName,
@@ -31,9 +47,24 @@ export default function BiserCommercialPacking({
   items,
 }: BiserCommercialPackingProps) {
   const [current, setCurrent] = useState(0);
+  const [direction, setDirection] = useState(1);
 
-  const prev = () => setCurrent((i) => (i - 1 + items.length) % items.length);
-  const next = () => setCurrent((i) => (i + 1) % items.length);
+  // Next items are on the LEFT side (current+1, current+2),
+  // so clicking next the new image enters from the left → direction = -1
+  const prev = () => {
+    setDirection(1);
+    setCurrent((i) => (i - 1 + items.length) % items.length);
+  };
+
+  const next = () => {
+    setDirection(-1);
+    setCurrent((i) => (i + 1) % items.length);
+  };
+
+  const goTo = (i: number) => {
+    setDirection(i > current ? -1 : 1);
+    setCurrent(i);
+  };
 
   return (
     <section className="py-8 sm:py-12">
@@ -50,25 +81,47 @@ export default function BiserCommercialPacking({
         {/* Carousel */}
         <div className="flex items-center justify-center gap-2 lg:gap-4 mb-4">
           {/* Far left (2 steps ahead) */}
-          <div className="hidden lg:block relative w-20 aspect-square shrink-0 opacity-25">
-            <Image
-              src={items[(current + 2) % items.length].imageSrc}
-              alt=""
-              fill
-              className="object-contain"
-              sizes="80px"
-            />
+          <div className="hidden lg:block relative w-20 aspect-square shrink-0 opacity-25 overflow-hidden">
+            <AnimatePresence initial={false}>
+              <motion.div
+                key={(current + 2) % items.length}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.25, ease: "easeInOut" }}
+                className="absolute inset-0"
+              >
+                <Image
+                  src={items[(current + 2) % items.length].imageSrc}
+                  alt=""
+                  fill
+                  className="object-contain"
+                  sizes="80px"
+                />
+              </motion.div>
+            </AnimatePresence>
           </div>
 
           {/* Near left (1 step ahead) */}
-          <div className="hidden lg:block relative w-32 aspect-square shrink-0 opacity-50">
-            <Image
-              src={items[(current + 1) % items.length].imageSrc}
-              alt=""
-              fill
-              className="object-contain"
-              sizes="128px"
-            />
+          <div className="hidden lg:block relative w-32 aspect-square shrink-0 opacity-50 overflow-hidden">
+            <AnimatePresence initial={false}>
+              <motion.div
+                key={(current + 1) % items.length}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.25, ease: "easeInOut" }}
+                className="absolute inset-0"
+              >
+                <Image
+                  src={items[(current + 1) % items.length].imageSrc}
+                  alt=""
+                  fill
+                  className="object-contain"
+                  sizes="128px"
+                />
+              </motion.div>
+            </AnimatePresence>
           </div>
 
           {/* Prev button */}
@@ -83,15 +136,27 @@ export default function BiserCommercialPacking({
           </button>
 
           {/* Current image */}
-          <div className="relative w-48 sm:w-64 lg:w-72 aspect-square shrink-0">
-            <Image
-              key={current}
-              src={items[current].imageSrc}
-              alt={items[current].imageAlt}
-              fill
-              className="object-contain"
-              sizes="(max-width: 640px) 192px, (max-width: 1024px) 256px, 288px"
-            />
+          <div className="relative w-48 sm:w-64 lg:w-72 aspect-square shrink-0 overflow-hidden">
+            <AnimatePresence initial={false} custom={direction}>
+              <motion.div
+                key={current}
+                custom={direction}
+                variants={slideVariants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                transition={{ duration: 0.25, ease: "easeInOut" }}
+                className="absolute inset-0"
+              >
+                <Image
+                  src={items[current].imageSrc}
+                  alt={items[current].imageAlt}
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 640px) 192px, (max-width: 1024px) 256px, 288px"
+                />
+              </motion.div>
+            </AnimatePresence>
           </div>
 
           {/* Next button */}
@@ -106,25 +171,47 @@ export default function BiserCommercialPacking({
           </button>
 
           {/* Near right (1 step behind) */}
-          <div className="hidden lg:block relative w-32 aspect-square shrink-0 opacity-50">
-            <Image
-              src={items[(current - 1 + items.length) % items.length].imageSrc}
-              alt=""
-              fill
-              className="object-contain"
-              sizes="128px"
-            />
+          <div className="hidden lg:block relative w-32 aspect-square shrink-0 opacity-50 overflow-hidden">
+            <AnimatePresence initial={false}>
+              <motion.div
+                key={(current - 1 + items.length) % items.length}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.25, ease: "easeInOut" }}
+                className="absolute inset-0"
+              >
+                <Image
+                  src={items[(current - 1 + items.length) % items.length].imageSrc}
+                  alt=""
+                  fill
+                  className="object-contain"
+                  sizes="128px"
+                />
+              </motion.div>
+            </AnimatePresence>
           </div>
 
           {/* Far right (2 steps behind) */}
-          <div className="hidden lg:block relative w-20 aspect-square shrink-0 opacity-25">
-            <Image
-              src={items[(current - 2 + items.length) % items.length].imageSrc}
-              alt=""
-              fill
-              className="object-contain"
-              sizes="80px"
-            />
+          <div className="hidden lg:block relative w-20 aspect-square shrink-0 opacity-25 overflow-hidden">
+            <AnimatePresence initial={false}>
+              <motion.div
+                key={(current - 2 + items.length) % items.length}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.25, ease: "easeInOut" }}
+                className="absolute inset-0"
+              >
+                <Image
+                  src={items[(current - 2 + items.length) % items.length].imageSrc}
+                  alt=""
+                  fill
+                  className="object-contain"
+                  sizes="80px"
+                />
+              </motion.div>
+            </AnimatePresence>
           </div>
         </div>
 
@@ -133,7 +220,7 @@ export default function BiserCommercialPacking({
           {items.map((_, i) => (
             <button
               key={i}
-              onClick={() => setCurrent(i)}
+              onClick={() => goTo(i)}
               aria-label={`Go to item ${i + 1}`}
               className={`w-2 h-2 rounded-full transition-colors ${
                 i === current ? "bg-primary" : "bg-primary/30"
@@ -165,7 +252,18 @@ export default function BiserCommercialPacking({
                 />
               </div>
               <p className="text-sm font-bold text-primary">{slot.label}</p>
-              <p className="text-sm text-text">{items[current].detailValues[i]}</p>
+              <AnimatePresence mode="wait">
+                <motion.p
+                  key={`${current}-${i}`}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.15 }}
+                  className="text-sm text-text"
+                >
+                  {items[current].detailValues[i]}
+                </motion.p>
+              </AnimatePresence>
             </div>
           ))}
         </div>

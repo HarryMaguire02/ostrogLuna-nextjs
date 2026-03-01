@@ -1,14 +1,23 @@
 import Container from "./Container";
 
+interface Highlight {
+  title: string;
+  description: string;
+}
+
 interface ProductionInActionProps {
   title: string;
   subtitle: string;
+  body: string;
+  highlights: Highlight[];
   videoSrc: string;
 }
 
 export default function ProductionInAction({
   title,
   subtitle,
+  body,
+  highlights,
   videoSrc,
 }: ProductionInActionProps) {
   return (
@@ -28,17 +37,35 @@ export default function ProductionInAction({
           {subtitle}
         </p>
 
-        {/* Video */}
-        <div className="flex justify-center">
-          <video
-            className="rounded-2xl"
-            autoPlay
-            muted
-            loop
-            playsInline
-          >
-            <source src={videoSrc} type="video/mp4" />
-          </video>
+        {/* 2-column grid: text left, video right */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-12 items-center">
+          {/* Left: contextual text */}
+          <div>
+            <p className="text-text leading-relaxed mb-8">{body}</p>
+
+            <div className="space-y-5">
+              {highlights.map((h, i) => (
+                <div key={i} className="flex gap-4 items-start">
+                  <span className="mt-2 shrink-0 h-0.75 w-6 rounded-full bg-linear-to-r from-secondary to-primary" />
+                  <div>
+                    <p className="font-bold text-primary mb-1">{h.title}</p>
+                    <p className="text-text text-sm leading-relaxed">{h.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Right: video */}
+          <div className="flex justify-center">
+            <video
+              className="rounded-2xl max-h-[480px] w-auto"
+              controls
+              playsInline
+            >
+              <source src={videoSrc} type="video/mp4" />
+            </video>
+          </div>
         </div>
       </Container>
     </section>
