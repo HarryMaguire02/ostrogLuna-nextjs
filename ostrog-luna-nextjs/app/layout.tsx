@@ -25,8 +25,21 @@ export const metadata: Metadata = {
     title: "Ostrog Luna - Premium Sunflower Oil Producer",
     description:
       "Leading producer of high-quality refined sunflower oil with 500+ business partners and exports to 20+ markets.",
-    // TODO: Add og:image once designer provides the asset (1200x630px)
-    // images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    images: [
+      {
+        url: "/og-logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Ostrog Luna - Premium Sunflower Oil Producer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Ostrog Luna - Premium Sunflower Oil Producer",
+    description:
+      "Leading producer of high-quality refined sunflower oil with 500+ business partners and exports to 20+ markets.",
+    images: ["/og-logo.png"],
   },
   robots: {
     index: true,

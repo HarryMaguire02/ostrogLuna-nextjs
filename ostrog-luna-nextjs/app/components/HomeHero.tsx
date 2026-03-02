@@ -27,41 +27,25 @@ export default function HomeHero({
   ctaContact,
   features,
   imageSrc,
-  imagePhone,
   imageAlt,
   lang,
 }: HomeHeroProps) {
   const [titleBold, titleLight] = title.split("\n");
 
   return (
-    <section className="relative overflow-hidden py-8 sm:py-12 sm:min-h-175">
-      {/* Background image — desktop only, scales to section height */}
-      <div className="hidden sm:block absolute inset-y-0 left-0 right-0">
-        <Image
-          src={imageSrc}
-          alt={imageAlt}
-          width={1440}
-          height={1024}
-          className="h-full w-auto max-w-none ml-auto"
-          sizes="100vh"
-          priority
-        />
-      </div>
-
+    <section className="relative overflow-hidden py-8 sm:py-12 ">
       <Container>
-        <div className="relative z-10">
-          {/* Content — left side on desktop, full width on mobile */}
-          <div className="w-full sm:max-w-[30%]">
-            {/* Title — first line bold, second line light */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 sm:items-stretch gap-8 sm:gap-12">
+
+          {/* Left: text content */}
+          <div className="sm:flex sm:flex-col sm:justify-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary mb-4 leading-tight">
-              <span className="block font-bold whitespace-nowrap">{titleBold}</span>
-              <span className="block font-light whitespace-nowrap">{titleLight}</span>
+              <span className="block font-bold">{titleBold}</span>
+              <span className="block font-light">{titleLight}</span>
             </h1>
 
-            {/* Subtitle */}
             <p className="text-text leading-relaxed mb-8">{subtitle}</p>
 
-            {/* CTAs */}
             <div className="flex flex-wrap gap-4 mb-10">
               <Link
                 href={`/${lang}/biser-oil`}
@@ -77,7 +61,6 @@ export default function HomeHero({
               </Link>
             </div>
 
-            {/* Feature bullets */}
             <div className="flex flex-col gap-4 sm:gap-6">
               {features.map((f, i) => (
                 <div key={i} className="flex items-center gap-3">
@@ -96,17 +79,30 @@ export default function HomeHero({
             </div>
           </div>
 
-          {/* Mobile image — below content */}
-          <div className="sm:hidden mt-8 relative w-full aspect-4/3">
+          {/* Right: desktop image — fills full grid row height */}
+          <div className="hidden sm:block relative">
             <Image
-              src={imagePhone}
+              src={imageSrc}
               alt={imageAlt}
               fill
-              className="object-cover"
+              className="object-contain drop-shadow-xl"
+              sizes="50vw"
+              priority
+            />
+          </div>
+
+          {/* Mobile: image below content */}
+          <div className="sm:hidden relative w-full aspect-4/3">
+            <Image
+              src={imageSrc}
+              alt={imageAlt}
+              fill
+              className="object-contain drop-shadow-xl"
               sizes="calc(100vw - 2rem)"
               priority
             />
           </div>
+
         </div>
       </Container>
     </section>

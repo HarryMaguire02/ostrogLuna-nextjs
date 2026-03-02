@@ -99,7 +99,7 @@ export default async function Home({
               label: dict.home.hero.features.distribution,
             },
           ]}
-          imageSrc="/home-hero.png"
+          imageSrc="/home-hero-v2.png"
           imageAlt="Biser sunflower oil bottles with sunflower field"
           imagePhone="/contact-hero.png"
           lang={lang}
