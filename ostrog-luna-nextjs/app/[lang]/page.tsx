@@ -106,6 +106,7 @@ export default async function Home({
         />
 
         <HomeCertsBanner
+          lang={lang}
           certs={[
             { imageSrc: "/HACCP-certificate-yellow.png", imageAlt: "HACCP certification",     width: 137, height: 100 },
             { imageSrc: "/IFS-certificate-yellow.png",   imageAlt: "IFS Food certification",  width: 235, height: 139 },
