@@ -56,8 +56,8 @@ export default function ContactFacility({ dict }: Props) {
               </div>
               <div className="w-px bg-gray-300 self-stretch" />
               <div className="leading-relaxed">
-                <p>{dict.hours.time}</p>
-                <p>{dict.hours.time}</p>
+                <p>{dict.hours.mondayFridayTime}</p>
+                <p>{dict.hours.saturdayTime}</p>
               </div>
             </div>
           </div>

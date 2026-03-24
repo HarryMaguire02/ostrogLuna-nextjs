@@ -67,11 +67,11 @@ export default function Footer({ lang, dict }: { lang: Locale; dict: Dictionary 
               <dl className="space-y-2 text-sm">
                 <div className="flex sm:justify-start gap-2">
                   <dt>{dict.footer.mondayFriday}</dt>
-                  <dd>7:30 - 16:30</dd>
+                  <dd>07:00 - 15:00</dd>
                 </div>
                 <div className="flex sm:justify-start gap-2">
                   <dt>{dict.footer.saturday}</dt>
-                  <dd>7:30 - 16:30</dd>
+                  <dd>08:00 - 14:00</dd>
                 </div>
               </dl>
             </div>
@@ -99,7 +99,7 @@ export default function Footer({ lang, dict }: { lang: Locale; dict: Dictionary 
                     href="tel:+38934346611"
                     className="hover:text-secondary transition-colors"
                   >
-                    +389 34 346 611
+                    +389 3434 6612
                   </a>
                 </p>
                 <p>

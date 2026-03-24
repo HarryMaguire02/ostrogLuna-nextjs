@@ -40,13 +40,50 @@ export default async function ContactUs({
   const { lang } = await params;
   const dict = await getDictionary(lang as Locale);
 
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    name: "Ostrog Luna",
+    url: BASE_URL,
+    logo: `${BASE_URL}/ostrog-luna-logo.png`,
+    telephone: "+38934346611",
+    email: "info@ostrogluna.com",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress: "Atanas Mucev no.2",
+      addressLocality: "Strumica",
+      postalCode: "2400",
+      addressCountry: "MK",
+    },
+    openingHoursSpecification: [
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        opens: "07:00",
+        closes: "15:00",
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        dayOfWeek: "Saturday",
+        opens: "08:00",
+        closes: "14:00",
+      },
+    ],
+  };
+
   return (
-    <div className="pt-20">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+      />
+      <div className="pt-20">
       <ContactHero dict={dict.contactUs} />
       <Separator/>
       <ContactInformation dict={dict.contactUs.contactInformation} />
       <Separator/>
       <ContactFacility dict={dict.contactUs.facility} />
     </div>
+    </>
   );
 }

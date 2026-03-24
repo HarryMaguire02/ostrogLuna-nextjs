@@ -19,9 +19,9 @@ interface ProductionToDeliveryProps {
 // Diagonal positions from bottom-left to top-right within the items panel
 const POSITIONS = [
   { left: "8%",  top: "62%" },
-  { left: "30%", top: "40%" },
-  { left: "56%", top: "18%" },
-  { left: "80%", top: "2%"  },
+  { left: "26%", top: "30%" },
+  { left: "52%", top: "10%" },
+  { left: "80%", top: "-15%" },
 ] as const;
 
 export default function ProductionToDelivery({
@@ -34,13 +34,13 @@ export default function ProductionToDelivery({
   return (
     <section className="relative overflow-hidden py-8 sm:py-12">
       {/* Background image — desktop only, scales to section height */}
-      <div className="hidden sm:block absolute inset-y-0 left-0 right-0">
+      <div className="hidden sm:block absolute inset-y-0 left-0 right-0 min-[1921px]:left-auto min-[1921px]:right-0 min-[1921px]:w-[60%] min-[1921px]:max-w-[1200px]">
         <Image
           src={backgroundSrc}
           alt={backgroundAlt}
           width={1440}
           height={1024}
-          className="h-full w-auto max-w-none ml-auto"
+          className="h-full w-auto max-w-none ml-auto min-[1921px]:h-auto min-[1921px]:w-full min-[1921px]:absolute min-[1921px]:bottom-0 min-[1921px]:right-0"
           sizes="100vh"
         />
       </div>
@@ -57,6 +57,41 @@ export default function ProductionToDelivery({
 
         {/* Desktop items panel — positioned within container padding */}
         <div className="hidden sm:block relative h-[460px]">
+          {/* Curved connecting arcs between items */}
+          <svg
+            className="absolute inset-0 w-full h-full pointer-events-none"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+            fill="none"
+          >
+            {/* Arc: item 0 → item 1 */}
+            <path
+              d="M 8,79 Q 10,50 26,47"
+              stroke="#303C78"
+              strokeWidth="2"
+              vectorEffect="non-scaling-stroke"
+              strokeLinecap="round"
+              fill="none"
+            />
+            {/* Arc: item 1 → item 2 */}
+            <path
+              d="M 26,47 Q 33,24 52,27"
+              stroke="#303C78"
+              strokeWidth="2"
+              vectorEffect="non-scaling-stroke"
+              strokeLinecap="round"
+              fill="none"
+            />
+            {/* Arc: item 2 → item 3 */}
+            <path
+              d="M 52,27 Q 60,0 80,2"
+              stroke="#303C78"
+              strokeWidth="2"
+              vectorEffect="non-scaling-stroke"
+              strokeLinecap="round"
+              fill="none"
+            />
+          </svg>
           {items.map((item, i) => (
             <div
               key={i}

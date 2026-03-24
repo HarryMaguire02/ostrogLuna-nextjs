@@ -23,8 +23,8 @@ export async function generateMetadata({
       ? "Бисер Масло | Острог Луна - Децении Доверба во Секоја Капка"
       : "Biser Oil | Ostrog Luna - Decades of Trust in Every Drop",
     description: isMk
-      ? "БИСЕР е висококвалитетно, 100% природно рафинирано сончогледово масло со 27+ години доверба. Достапно во малопродажни шишиња од 750мл до 10Л и расфус контејнери."
-      : "BISER is a high-quality, 100% natural refined sunflower oil with 27+ years of trust. Available in retail bottles from 750ml to 10L and bulk containers.",
+      ? "БИСЕР е висококвалитетно, 100% природно рафинирано сончогледово масло со 27+ години доверба. Достапно во малопродажни шишиња од 850мл до 10Л и расфус контејнери."
+      : "BISER is a high-quality, 100% natural refined sunflower oil with 27+ years of trust. Available in retail bottles from 850ml to 10L and bulk containers.",
     alternates: {
       canonical: isMk ? `${BASE_URL}/mk/biser-oil` : `${BASE_URL}/biser-oil`,
       languages: {
@@ -46,8 +46,30 @@ export default async function BiserOil({
   const { lang } = await params;
   const dict = await getDictionary(lang as Locale);
 
+  const productSchema = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "BISER Refined Sunflower Oil",
+    description:
+      "High-quality, 100% natural refined sunflower oil with 27+ years of trust.",
+    brand: { "@type": "Brand", name: "BISER" },
+    manufacturer: {
+      "@type": "Organization",
+      name: "Ostrog Luna",
+      url: BASE_URL,
+    },
+    image: `${BASE_URL}/biser-hero-v2.png`,
+    url: `${BASE_URL}/${lang === "mk" ? "mk/" : ""}biser-oil`,
+    category: "Edible Oils",
+  };
+
   return (
-    <div className="pt-20">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productSchema) }}
+      />
+      <div className="pt-20">
       <BiserOilHero
         label={dict.biserOil.hero.label}
         title={dict.biserOil.hero.title}
@@ -146,5 +168,6 @@ export default async function BiserOil({
         ]}
       />
     </div>
+    </>
   );
 }

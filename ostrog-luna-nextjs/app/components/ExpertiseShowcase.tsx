@@ -26,12 +26,12 @@ export default function ExpertiseShowcase({
   return (
     <section className="relative overflow-hidden py-8 sm:py-12 sm:min-h-175">
       {/* Desktop image — fixed height, vertically centered, bleeds off left edge */}
-      <div className="hidden sm:block absolute top-1/2 left-0 w-[60%] h-[70vh] max-h-175 -translate-x-[8%] -translate-y-1/2">
+      <div className="hidden sm:block absolute top-1/2 left-0 w-[60%] min-[1921px]:max-w-[1050px] h-[70vh] max-h-175 -translate-x-[8%] min-[1921px]:translate-x-0 min-[1921px]:left-[5%] -translate-y-1/2">
         <Image
           src={imageSrc}
           alt={imageAlt}
           fill
-          className="object-cover object-right"
+          className="object-cover object-right min-[1921px]:object-contain min-[1921px]:object-center"
           sizes="60vw"
           priority
         />

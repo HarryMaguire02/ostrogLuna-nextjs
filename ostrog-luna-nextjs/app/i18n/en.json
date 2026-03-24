@@ -58,7 +58,7 @@
       "We are a producer of high-quality edible oils with a strong focus on sunflower oil and carefully selected raw materials. Our production process is built on consistency, quality control, and respect for natural ingredients.",
       "From seed selection to final bottling, every step is carefully monitored to ensure purity, stability, and reliable performance in everyday cooking and professional use.",
       "Our goal is simple — to deliver oils that meet high quality standards and earn long-term trust.",
-      "We are only company in North Macedonia with IFS certificate"
+      "We are the only oil factory in Macedonia that has applied the IFS certificate."
     ],
     "stats": {
       "businessPartners": "Business\nPartners",
@@ -138,7 +138,7 @@
       "title": "Product Range",
       "subtitle": "High-quality oils under your private label",
       "products": {
-        "750ml": "750 mL",
+        "850ml": "850 mL",
         "1L": "1 L",
         "4750ml": "4750 mL",
         "5L": "5 L",
@@ -188,7 +188,7 @@
       },
       "itemDetails": {
         "10l":    { "packing": "PET bottles of 10 L",   "palette": "36 Packages / 72 Bottles",  "thermofoil": "2 bottles"  },
-        "5l":     { "packing": "PET bottles of 5 L",    "palette": "60 Packages / 144 Bottles", "thermofoil": "4 bottles"  },
+        "5l":     { "packing": "PET bottles of 5 L",    "palette": "36 Packages / 144 Bottles", "thermofoil": "4 bottles"  },
         "4750ml": { "packing": "PET bottles of 4750 mL","palette": "36 Packages / 144 Bottles", "thermofoil": "4 bottles"  },
         "950ml":  { "packing": "PET bottles of 950 mL", "palette": "60 Packages / 720 Bottles", "thermofoil": "12 bottles" },
         "850ml":  { "packing": "PET bottles of 850 mL", "palette": "60 Packages / 720 Bottles", "thermofoil": "12 bottles" },
@@ -363,7 +363,8 @@
       "hours": {
         "mondayFriday": "Monday-Friday",
         "saturday": "Saturday",
-        "time": "7:30 - 16:30"
+        "mondayFridayTime": "07:00 – 15:00",
+        "saturdayTime": "08:00 – 14:00"
       }
     }
   },

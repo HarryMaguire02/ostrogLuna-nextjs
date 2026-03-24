@@ -24,8 +24,8 @@ export async function generateMetadata({
       ? "Пакување | Острог Луна - Приватна Етикета и Решенија за Пакување"
       : "Packing | Ostrog Luna - Private Label & Packaging Solutions",
     description: isMk
-      ? "Острог Луна нуди решенија за приватна етикета, флексибилно пакување и договорно рафинирање на јадливи масла. Од 750мл малопродажни шишиња до 40ft расфус контејнери."
-      : "Ostrog Luna offers private label solutions, flexible packaging, and contract refining for edible oils. From 750ml retail bottles to 40ft bulk containers.",
+      ? "Острог Луна нуди решенија за приватна етикета, флексибилно пакување и договорно рафинирање на јадливи масла. Од 850мл малопродажни шишиња до 40ft расфус контејнери."
+      : "Ostrog Luna offers private label solutions, flexible packaging, and contract refining for edible oils. From 850ml retail bottles to 40ft bulk containers.",
     alternates: {
       canonical: isMk ? `${BASE_URL}/mk/packing` : `${BASE_URL}/packing`,
       languages: {
@@ -103,9 +103,9 @@ export default async function Packing({
         subtitle={dict.packing.productRange.subtitle}
         products={[
           {
-            imageSrc: "/range-750ml.png",
-            imageAlt: "750 mL oil bottle",
-            label: dict.packing.productRange.products["750ml"],
+            imageSrc: "/range-850ml.png",
+            imageAlt: "850 mL oil bottle",
+            label: dict.packing.productRange.products["850ml"],
           },
           {
             imageSrc: "/range-1L.png",
