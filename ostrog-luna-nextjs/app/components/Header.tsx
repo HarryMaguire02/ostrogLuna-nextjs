@@ -63,7 +63,9 @@ export default function Header({
               aria-label="Main navigation"
             >
               {navLinks.map((link) => {
-                const isActive = pathname === link.href;
+                const normHref = link.href.replace(/\/+$/, "") || "/";
+                const normPath = pathname.replace(/\/+$/, "") || "/";
+                const isActive = normPath === normHref;
                 return (
                   <Link
                     key={link.href}
