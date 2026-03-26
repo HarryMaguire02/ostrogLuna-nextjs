@@ -104,8 +104,13 @@ export default async function Packing({
         products={[
           {
             imageSrc: "/range-850ml.png",
-            imageAlt: "850 mL oil bottle",
+            imageAlt: "850 ml oil bottle",
             label: dict.packing.productRange.products["850ml"],
+          },
+          {
+              imageSrc: "/range-1L.png",
+              imageAlt: "905ml liter oil bottle",
+              label: dict.packing.productRange.products["905ml"],
           },
           {
             imageSrc: "/range-1L.png",
@@ -114,7 +119,7 @@ export default async function Packing({
           },
           {
             imageSrc: "/range-4750ml.png",
-            imageAlt: "4750 mL oil container",
+            imageAlt: "4750 ml oil container",
             label: dict.packing.productRange.products["4750ml"],
           },
           {

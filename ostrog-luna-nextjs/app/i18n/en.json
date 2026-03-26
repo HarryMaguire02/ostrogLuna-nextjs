@@ -13,6 +13,9 @@
     "mondayFriday": "Monday-Friday",
     "saturday": "Saturday",
     "address": "Address",
+    "addressLine1": "Atanas Mucev no.2",
+    "addressLine2": "2400 Strumica",
+    "addressLine3": "Republic of North Macedonia",
     "information": "Information",
     "copyright": "Ostrog-Luna | All Rights Reserved",
     "privacyPolicy": "Privacy Policy",
@@ -37,14 +40,14 @@
       "items": {
         "1l":    { "name": "Sunflower oil refined", "size": "PET bottles of 1 L" },
         "10l":   { "name": "Sunflower oil refined", "size": "PET bottles of 10 L" },
-        "850ml": { "name": "Sunflower oil refined", "size": "PET bottles of 850 mL" }
+        "850ml": { "name": "Sunflower oil refined", "size": "PET bottles of 850 ml" }
       }
     },
     "productionToDelivery": {
       "title": "From Production to Delivery",
       "subtitle": "A complete solution for refining, packaging, and bulk oil transportation. Designed for large-scale production and international delivery. Reliable infrastructure for food-grade oil distribution.",
       "items": {
-        "bottleSizes":    { "label": "Multiple Bottle Sizes",      "description": "850 mL – 10 L securely packaged" },
+        "bottleSizes":    { "label": "Multiple Bottle Sizes",      "description": "850 ml – 10 L securely packaged" },
         "capacity":       { "label": "High Production Capacity",   "description": "Up to 100 tons per 24 hours" },
         "truckTransport": { "label": "Tank Truck Transport",        "description": "Safe bulk oil delivery" },
         "flexitank":      { "label": "FLEXITANK System",            "description": "Food-grade international transport" }
@@ -138,9 +141,10 @@
       "title": "Product Range",
       "subtitle": "High-quality oils under your private label",
       "products": {
-        "850ml": "850 mL",
+        "850ml": "850 ml",
+        "905ml": "905 ml",
         "1L": "1 L",
-        "4750ml": "4750 mL",
+        "4750ml": "4750 ml",
         "5L": "5 L",
         "10L": "10 L",
         "26000L": "Flexitank 26000 L Capacity",
@@ -189,9 +193,9 @@
       "itemDetails": {
         "10l":    { "packing": "PET bottles of 10 L",   "palette": "36 Packages / 72 Bottles",  "thermofoil": "2 bottles"  },
         "5l":     { "packing": "PET bottles of 5 L",    "palette": "36 Packages / 144 Bottles", "thermofoil": "4 bottles"  },
-        "4750ml": { "packing": "PET bottles of 4750 mL","palette": "36 Packages / 144 Bottles", "thermofoil": "4 bottles"  },
-        "950ml":  { "packing": "PET bottles of 950 mL", "palette": "60 Packages / 720 Bottles", "thermofoil": "12 bottles" },
-        "850ml":  { "packing": "PET bottles of 850 mL", "palette": "60 Packages / 720 Bottles", "thermofoil": "12 bottles" },
+        "4750ml": { "packing": "PET bottles of 4750 ml","palette": "36 Packages / 144 Bottles", "thermofoil": "4 bottles"  },
+        "905ml":  { "packing": "PET bottles of 905 ml", "palette": "60 Packages / 720 Bottles", "thermofoil": "12 bottles" },
+        "850ml":  { "packing": "PET bottles of 850 ml", "palette": "60 Packages / 720 Bottles", "thermofoil": "12 bottles" },
         "1l":     { "packing": "PET bottles of 1 L",    "palette": "60 Packages / 720 Bottles", "thermofoil": "12 bottles" }
       }
     },

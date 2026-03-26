@@ -59,9 +59,10 @@ export default function ProductionInAction({
           {/* Right: video */}
           <div className="flex justify-center">
             <video
-              className="rounded-2xl max-h-[480px] w-auto"
+              className="rounded-2xl max-h-120 w-auto"
               controls
               playsInline
+              preload="metadata"
             >
               <source src={videoSrc} type="video/mp4" />
             </video>

@@ -146,7 +146,7 @@ export default async function Home({
             },
             {
               imageSrc: "/commercial-850ml.png",
-              imageAlt: "Biser sunflower oil 850mL bottle",
+              imageAlt: "Biser sunflower oil 850ml bottle",
               name: dict.home.products.items["850ml"].name,
               size: dict.home.products.items["850ml"].size,
             },

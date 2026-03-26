@@ -82,9 +82,9 @@ export default function Footer({ lang, dict }: { lang: Locale; dict: Dictionary 
                 {dict.footer.address}
               </h3>
               <address className="not-italic text-sm space-y-1">
-                <p>Atanas Mucev no.2</p>
-                <p>2400 Strumica</p>
-                <p>Republic of North Macedonia</p>
+                <p>{dict.footer.addressLine1}</p>
+                <p>{dict.footer.addressLine2}</p>
+                <p>{dict.footer.addressLine3}</p>
               </address>
             </div>
 

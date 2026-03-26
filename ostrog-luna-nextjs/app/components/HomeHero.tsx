@@ -33,7 +33,7 @@ export default function HomeHero({
   const [titleBold, titleLight] = title.split("\n");
 
   return (
-    <section className="relative overflow-hidden py-8 sm:py-12 sm:min-h-[600px] lg:min-h-[700px]">
+    <section className="relative overflow-hidden py-8 sm:py-12 sm:min-h-150 lg:min-h-175">
       {/* Desktop background image — positioned center-right */}
       <div className="hidden sm:block absolute inset-0">
         <Image
@@ -48,7 +48,7 @@ export default function HomeHero({
 
       <Container className="relative z-10 sm:pl-12 lg:pl-16">
         {/* Text content — left side on desktop, full width on mobile */}
-        <div className="sm:max-w-[50%] lg:max-w-[40%]">
+        <div className="text-center sm:text-left sm:max-w-[50%] lg:max-w-[40%]">
           <h1 className="text-4xl md:text-5xl lg:text-6xl text-primary mb-4 leading-tight">
             <span className="block font-bold">{titleBold}</span>
             <span className="block font-light">{titleLight}</span>
@@ -56,22 +56,22 @@ export default function HomeHero({
 
           <p className="text-text leading-relaxed mb-8">{subtitle}</p>
 
-          <div className="flex flex-wrap gap-4 mb-10">
+          <div className="flex flex-col sm:flex-row items-center sm:items-start gap-4 mb-10">
             <Link
               href={`/${lang}/biser-oil`}
-              className="inline-block bg-primary text-secondary font-bold px-8 py-3 rounded-full hover:bg-primary/90 transition-colors"
+              className="whitespace-nowrap bg-primary text-secondary font-bold px-8 py-3 rounded-full hover:bg-primary/90 transition-colors"
             >
               {ctaExplore}
             </Link>
             <Link
               href={`/${lang}/contact-us`}
-              className="inline-block bg-secondary text-primary font-bold px-8 py-3 rounded-full hover:bg-secondary/90 transition-colors"
+              className="whitespace-nowrap bg-secondary text-primary font-bold px-8 py-3 rounded-full hover:bg-secondary/90 transition-colors"
             >
               {ctaContact}
             </Link>
           </div>
 
-          <div className="flex flex-col gap-4 sm:gap-6">
+          <div className="flex flex-col items-center sm:items-start gap-4 sm:gap-6">
             {features.map((f, i) => (
               <div key={i} className="flex items-center gap-3">
                 <div className="relative w-8 h-8 shrink-0">

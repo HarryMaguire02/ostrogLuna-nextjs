@@ -56,7 +56,7 @@ export default function ProductionToDelivery({
         <p className="text-text leading-relaxed sm:max-w-2xl">{subtitle}</p>
 
         {/* Desktop items panel — positioned within container padding */}
-        <div className="hidden sm:block relative h-[460px]">
+        <div className="hidden sm:block relative h-115">
           {/* Curved connecting arcs between items */}
           <svg
             className="absolute inset-0 w-full h-full pointer-events-none"
