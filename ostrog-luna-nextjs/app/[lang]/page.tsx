@@ -150,6 +150,24 @@ export default async function Home({
               name: dict.home.products.items["850ml"].name,
               size: dict.home.products.items["850ml"].size,
             },
+            {
+              imageSrc: "/commercial-5l.png",
+              imageAlt: "Biser sunflower oil 5L bottle",
+              name: dict.home.products.items["5l"].name,
+              size: dict.home.products.items["5l"].size,
+            },
+            {
+              imageSrc: "/commercial-850ml.png",
+              imageAlt: "Biser sunflower oil 850ml bottle",
+              name: dict.home.products.items["905ml"].name,
+              size: dict.home.products.items["905ml"].size,
+            },
+            {
+              imageSrc: "/commercial-4750ml.png",
+              imageAlt: "Biser sunflower oil 4750ml bottle",
+              name: dict.home.products.items["4750ml"].name,
+              size: dict.home.products.items["4750ml"].size,
+            }
           ]}
         />
 

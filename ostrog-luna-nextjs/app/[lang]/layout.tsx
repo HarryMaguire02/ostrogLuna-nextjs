@@ -1,3 +1,5 @@
+import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import ScrollHeader from "../components/ScrollHeader";
 import Footer from "../components/Footer";
 import { getDictionary, locales } from "../i18n";
@@ -24,6 +26,8 @@ export default async function LangLayout({
         <ScrollHeader lang={lang} dict={dict} />
         <main>{children}</main>
         <Footer lang={lang} dict={dict} />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

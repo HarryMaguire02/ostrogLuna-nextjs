@@ -40,7 +40,10 @@
       "items": {
         "1l":    { "name": "Sunflower oil refined", "size": "PET bottles of 1 L" },
         "10l":   { "name": "Sunflower oil refined", "size": "PET bottles of 10 L" },
-        "850ml": { "name": "Sunflower oil refined", "size": "PET bottles of 850 ml" }
+        "850ml": { "name": "Sunflower oil refined", "size": "PET bottles of 850 ml" },
+        "4750ml": { "name": "Sunflower oil refined", "size": "PET bottles of 4750 ml" },
+        "905ml": { "name": "Sunflower oil refined", "size": "PET bottles of 905 ml" },
+        "5l":    { "name": "Sunflower oil refined", "size": "PET bottles of 5 L" }
       }
     },
     "productionToDelivery": {
@@ -187,7 +190,7 @@
       "details": {
         "palette": { "label": "Palette" },
         "packing": { "label": "Packing" },
-        "shelfLife": { "label": "Shelf life", "value": "12 months at 0–30°C" },
+        "shelfLife": { "label": "Shelf life", "value": "12 months at 0–22°C" },
         "thermofoil": { "label": "Thermofoil Pack" }
       },
       "itemDetails": {
