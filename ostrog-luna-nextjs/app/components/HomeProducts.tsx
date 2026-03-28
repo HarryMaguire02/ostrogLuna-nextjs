@@ -44,7 +44,7 @@ export default function HomeProducts({ title, products }: HomeProductsProps) {
                 />
               </div>
               <p className="text-md md:text-lg lg:text-xl font-semibold text-text text-center">{product.name}</p>
-              <p className="text-sm md:text-base text-text/70 text-center">{product.size}</p>
+              <p className="text-sm md:text-base text-text/70 text-center text-nowrap">{product.size}</p>
             </div>
           ))}
         </div>

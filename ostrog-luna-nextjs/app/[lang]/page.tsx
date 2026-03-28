@@ -133,28 +133,10 @@ export default async function Home({
           title={dict.home.products.title}
           products={[
             {
-              imageSrc: "/commercial-1l.png",
-              imageAlt: "Biser sunflower oil 1L bottle",
-              name: dict.home.products.items["1l"].name,
-              size: dict.home.products.items["1l"].size,
-            },
-            {
-              imageSrc: "/commercial-10l.png",
-              imageAlt: "Biser sunflower oil 10L bottle",
-              name: dict.home.products.items["10l"].name,
-              size: dict.home.products.items["10l"].size,
-            },
-            {
               imageSrc: "/commercial-850ml.png",
               imageAlt: "Biser sunflower oil 850ml bottle",
               name: dict.home.products.items["850ml"].name,
               size: dict.home.products.items["850ml"].size,
-            },
-            {
-              imageSrc: "/commercial-5l.png",
-              imageAlt: "Biser sunflower oil 5L bottle",
-              name: dict.home.products.items["5l"].name,
-              size: dict.home.products.items["5l"].size,
             },
             {
               imageSrc: "/commercial-850ml.png",
@@ -163,10 +145,28 @@ export default async function Home({
               size: dict.home.products.items["905ml"].size,
             },
             {
+              imageSrc: "/commercial-1l.png",
+              imageAlt: "Biser sunflower oil 1L bottle",
+              name: dict.home.products.items["1l"].name,
+              size: dict.home.products.items["1l"].size,
+            },
+            {
               imageSrc: "/commercial-4750ml.png",
               imageAlt: "Biser sunflower oil 4750ml bottle",
               name: dict.home.products.items["4750ml"].name,
               size: dict.home.products.items["4750ml"].size,
+            },
+            {
+              imageSrc: "/commercial-5l.png",
+              imageAlt: "Biser sunflower oil 5L bottle",
+              name: dict.home.products.items["5l"].name,
+              size: dict.home.products.items["5l"].size,
+            },
+            {
+              imageSrc: "/commercial-10l.png",
+              imageAlt: "Biser sunflower oil 10L bottle",
+              name: dict.home.products.items["10l"].name,
+              size: dict.home.products.items["10l"].size,
             }
           ]}
         />
