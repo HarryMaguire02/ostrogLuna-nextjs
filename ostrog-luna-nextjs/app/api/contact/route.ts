@@ -16,7 +16,7 @@ export async function POST(request: NextRequest) {
     }
 
     await resend.emails.send({
-      from: "Ostrog Luna <onboarding@resend.dev>",
+      from: "Ostrog Luna <noreply@notify.ostrogluna.com>",
       to: process.env.CONTACT_EMAIL!,
       replyTo: email,
       subject: `New contact form message from ${escapeHtml(name)}`,
