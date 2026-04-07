@@ -99,7 +99,7 @@ export default function Footer({ lang, dict }: { lang: Locale; dict: Dictionary 
                     href="tel:+38934346611"
                     className="hover:text-secondary transition-colors"
                   >
-                    +389 3434 6612
+                    +389 34 346 611
                   </a>
                 </p>
                 <p>

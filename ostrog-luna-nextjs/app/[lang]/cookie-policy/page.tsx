@@ -42,9 +42,10 @@ export default async function CookiePolicy({
   return (
     <div className="pt-20 min-h-screen">
       <Container className="py-16 max-w-3xl">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-8">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-2">
           {t.title}
         </h1>
+        <p className="text-sm text-gray-500 mb-8">{t.lastUpdated}</p>
 
         <p className="text-gray-700 leading-relaxed mb-10">{t.intro}</p>
 

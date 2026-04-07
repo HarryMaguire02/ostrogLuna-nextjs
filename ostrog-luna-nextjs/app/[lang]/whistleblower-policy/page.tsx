@@ -42,33 +42,38 @@ export default async function WhistleblowerPolicy({
   return (
     <div className="pt-20 min-h-screen">
       <Container className="py-16 max-w-3xl">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-8">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary mb-2">
           {t.title}
         </h1>
+        <p className="text-sm text-gray-500 mb-8">{t.lastUpdated}</p>
 
         <p className="text-gray-700 leading-relaxed mb-10">{t.intro}</p>
 
         <div className="space-y-8">
-          {Object.values(t.sections).map((section) => (
+          {Object.entries(t.sections).map(([key, section]) => (
             <div key={section.title}>
               <h2 className="text-lg font-bold text-primary mb-2">
                 {section.title}
               </h2>
-              <p className="text-gray-700 leading-relaxed">{section.content}</p>
+              <p className="text-gray-700 leading-relaxed">
+                {section.content}
+                {key === "reportingChannel" && (
+                  <>
+                    {" "}
+                    <a
+                      href="mailto:info@ostrogluna.com"
+                      className="text-primary font-medium hover:underline"
+                    >
+                      info@ostrogluna.com
+                    </a>
+                  </>
+                )}
+              </p>
             </div>
           ))}
         </div>
 
-        <div className="mt-10 pt-8 border-t border-gray-200 space-y-2 text-gray-700">
-          <p>
-            {t.sections.reportingChannel.content}{" "}
-            <a
-              href="mailto:info@ostrogluna.com"
-              className="text-primary font-medium hover:underline"
-            >
-              info@ostrogluna.com
-            </a>
-          </p>
+        <div className="mt-10 pt-8 border-t border-gray-200 text-gray-700">
           <p>
             {t.contactNote}{" "}
             <a

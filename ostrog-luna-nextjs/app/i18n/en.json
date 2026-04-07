@@ -230,79 +230,186 @@
   },
   "termsOfUse": {
     "title": "Website Terms of Use",
+    "lastUpdated": "Last updated: 8 April 2026",
+    "intro": "These Terms of Use govern your access to and use of the website ostrogluna.com (the \"Site\"), operated by OSTROG-LUNA DOO Strumica (\"Ostrog Luna\", \"we\", \"us\"). By using the Site, you agree to these Terms. If you do not agree, please do not use the Site.",
     "sections": {
-      "informational": {
-        "title": "Informational Purposes",
-        "content": "While Ostrog Luna strives to provide accurate and up-to-date information, we are not liable for any errors, omissions, or inaccuracies in the content displayed on this website."
+      "natureOfSite": {
+        "title": "Nature of the Site",
+        "content": "The Site is informational. It presents our company, products, production capabilities and contact details. The Site does not offer online sales, online ordering, online payments, user accounts or newsletter subscriptions. Any commercial relationship — including pricing, quantities, delivery and private-label arrangements — is established exclusively through direct contact and a separate written agreement between Ostrog Luna and the customer."
+      },
+      "productInformation": {
+        "title": "Product Information",
+        "content": "Product descriptions, specifications, packaging formats, capacities and technical data shown on the Site are provided for general information. We make reasonable efforts to keep them accurate and up to date, but they are indicative and may change. Binding terms (including specifications, lead times and price) apply only to those expressly confirmed in a written offer or contract signed by both parties."
       },
       "intellectualProperty": {
         "title": "Intellectual Property",
-        "content": "All content, including text, logos, and images, is the exclusive intellectual property of Ostrog Luna. Unauthorized reproduction is prohibited."
+        "content": "All content on the Site — including text, logos, trademarks, photographs, graphics and layout — is the property of Ostrog Luna or its licensors and is protected by applicable intellectual property laws. You may view and print pages for your personal, non-commercial reference. Any other use, reproduction, distribution, modification or commercial exploitation is prohibited without our prior written consent."
+      },
+      "acceptableUse": {
+        "title": "Acceptable Use",
+        "content": "You agree not to use the Site in any way that is unlawful, harmful or that interferes with its operation or the experience of other users. You must not attempt to gain unauthorised access to any part of the Site, its servers, or any system connected to it; introduce malicious code; scrape content for commercial purposes; or submit false or misleading information through the contact form."
+      },
+      "externalLinks": {
+        "title": "External Links",
+        "content": "The Site may contain links to third-party websites (for example, our social media profiles). These links are provided for convenience only. We do not control and are not responsible for the content, policies or practices of any third-party site."
       },
       "liability": {
         "title": "Limitation of Liability",
-        "content": "Ostrog Luna shall not be liable for any direct or indirect loss resulting from the use of this website."
+        "content": "The Site is provided on an \"as is\" and \"as available\" basis. To the fullest extent permitted by applicable law, Ostrog Luna shall not be liable for any direct, indirect, incidental, consequential or punitive loss arising out of your access to, use of, or inability to use the Site, or any reliance on its content. Nothing in these Terms limits any liability that cannot be excluded under applicable law."
+      },
+      "changes": {
+        "title": "Changes to These Terms",
+        "content": "We may update these Terms from time to time to reflect changes to the Site, our business or applicable law. The updated version takes effect when published on this page. The \"Last updated\" date at the top indicates when the most recent revision was made."
       },
       "jurisdiction": {
-        "title": "Jurisdiction",
-        "content": "Any disputes arising from the use of this website or these terms shall be subject to the exclusive jurisdiction of the competent courts of Strumica, Republic of North Macedonia."
+        "title": "Governing Law and Jurisdiction",
+        "content": "These Terms and any matter arising from them are governed by the laws of the Republic of North Macedonia. Any dispute that cannot be resolved amicably shall fall under the exclusive jurisdiction of the competent courts in Strumica, Republic of North Macedonia."
       }
     },
     "contactNote": "For any questions regarding these Terms of Use, please contact us at:"
   },
   "cookiePolicy": {
     "title": "Cookie Policy",
-    "intro": "This website uses cookies to enhance your browsing experience and analyze our traffic.",
+    "lastUpdated": "Last updated: 8 April 2026",
+    "intro": "This page explains how ostrogluna.com handles cookies and similar technologies. The short version: we do not use tracking cookies, advertising cookies or third-party marketing pixels. We do not display a cookie consent banner because none of the technologies we use require consent under the ePrivacy Directive or the GDPR.",
     "sections": {
-      "strictlyNecessary": {
-        "title": "Strictly Necessary Cookies",
-        "content": "Essential for the website's basic functionality and security."
+      "noTrackingCookies": {
+        "title": "No Tracking or Advertising Cookies",
+        "content": "We do not run Google Analytics, Meta Pixel, advertising networks, retargeting tags or third-party marketing trackers on this website. We do not sell or share visitor data with advertisers."
       },
-      "analytical": {
-        "title": "Analytical Cookies",
-        "content": "We use tools like Google Analytics to understand user behavior and improve our services, subject to your prior consent."
+      "essentialStorage": {
+        "title": "Strictly Necessary Technical Storage",
+        "content": "The Site may rely on a small amount of strictly necessary technical storage that is required for the page to function correctly (for example, remembering your selected language between pages or standard framework cookies set by our hosting provider for security). Strictly necessary storage of this type is exempt from the consent requirement under the ePrivacy Directive."
       },
-      "management": {
-        "title": "Management",
-        "content": "You may withdraw your consent or manage your cookie preferences at any time via your browser settings or our website's consent banner."
+      "analyticsWithoutCookies": {
+        "title": "Cookieless Analytics (Vercel)",
+        "content": "We use Vercel Web Analytics and Vercel Speed Insights, provided by Vercel Inc., to understand aggregate traffic and to monitor the technical performance of the Site. These services are designed to be privacy-friendly: they do not set tracking cookies, do not use cross-site identifiers, and do not build personal profiles of visitors. They process technical signals such as the page being viewed, anonymised IP-derived approximate location, device type, browser, referrer and basic performance timings, in order to generate aggregated, non-identifying statistics. For details, see Vercel's documentation on Web Analytics and Speed Insights."
+      },
+      "searchConsole": {
+        "title": "Google Search Console",
+        "content": "We use Google Search Console as an off-site webmaster tool to monitor how the Site appears in Google Search results (impressions, clicks, indexing status). Google Search Console does not place any tracking script or cookie on this website. The data it shows us is aggregated and provided by Google based on its own search index."
+      },
+      "browserControls": {
+        "title": "Your Browser Controls",
+        "content": "You can always block or delete cookies and local storage through your browser settings. Because we do not rely on tracking cookies, doing so will not impair your ability to read the Site."
       }
     },
-    "contactNote": "For any questions regarding our Cookie Policy, please contact us at:"
+    "contactNote": "For any questions regarding this Cookie Policy, please contact us at:"
   },
   "privacyPolicy": {
     "title": "Privacy & Data Protection Policy",
-    "intro": "Ostrog Luna complies with the EU General Data Protection Regulation (GDPR) and the North Macedonia Law on Personal Data Protection.",
+    "lastUpdated": "Last updated: 8 April 2026",
+    "intro": "This Privacy Policy explains what personal data we process when you visit ostrogluna.com or contact us, why we process it, how long we keep it, who we share it with, and the rights you have. We process personal data in line with the EU General Data Protection Regulation (GDPR) and the Law on Personal Data Protection of the Republic of North Macedonia.",
     "sections": {
       "dataController": {
-        "title": "Data Controller",
-        "content": "Ostrog Luna, Atanas Mucev no.2, 2400 Strumica, Republic of North Macedonia."
+        "title": "Who We Are (Data Controller)",
+        "content": [
+          "The data controller responsible for your personal data is:",
+          "OSTROG-LUNA DOO Strumica, registered office: Atanas Mucev no.2, 2400 Strumica, Republic of North Macedonia. Company registration number: 7633521. Tax ID: 4027022536770.",
+          "For any privacy-related question or to exercise your rights, contact us at info@ostrogluna.com."
+        ]
       },
-      "purpose": {
-        "title": "Purpose of Processing",
-        "content": "We collect and process business contact information solely for the execution of trade contracts, KYC (Know Your Customer) compliance, responding to inquiries submitted through our contact form, and website optimization."
+      "dataWeCollect": {
+        "title": "What Data We Collect",
+        "content": [
+          "Contact form data: when you submit our contact form, we receive the name and email address you provide (required), and your phone number and message (optional). We also record whether you ticked the consent checkbox for telephone contact.",
+          "Email correspondence: if you write to us directly, we receive your email address, your message and any information you choose to include.",
+          "Technical and usage data: when you visit the Site, our hosting provider and analytics providers process limited technical signals such as the requested URL, referrer, approximate location derived from IP, device type, browser, language and basic performance timings. These signals are used to generate aggregated, non-identifying statistics and are not combined with your contact details to build a profile of you.",
+          "We do not knowingly collect special categories of personal data through the Site, and we do not run advertising or behavioural tracking."
+        ]
       },
-      "rights": {
+      "lawfulBasis": {
+        "title": "Lawful Basis for Processing",
+        "content": [
+          "Contact form and direct correspondence: processed on the basis of your request to be contacted (Art. 6(1)(b) GDPR — steps taken at your request prior to entering a contract) and, where you tick the consent box for telephone contact, on the basis of your consent (Art. 6(1)(a) GDPR).",
+          "Aggregated, cookieless website analytics and performance monitoring: processed on the basis of our legitimate interest (Art. 6(1)(f) GDPR) in understanding aggregate traffic and keeping the Site secure, fast and functional. Because the analytics tools we use do not set cookies or build personal profiles, the impact on your privacy is minimal.",
+          "Compliance with legal obligations: where applicable, we may process data to comply with legal obligations to which we are subject (Art. 6(1)(c) GDPR)."
+        ]
+      },
+      "howWeUse": {
+        "title": "How We Use Your Data",
+        "content": [
+          "To respond to enquiries you submit through the contact form or by email.",
+          "To follow up on commercial discussions, offers and orders that you initiate.",
+          "To monitor the Site's traffic and technical performance in aggregate, and to investigate security incidents.",
+          "To meet our legal, accounting and regulatory obligations."
+        ]
+      },
+      "processors": {
+        "title": "Service Providers and Recipients",
+        "content": [
+          "We do not sell personal data. We share it only with the service providers that help us operate the Site and our communications, and only to the extent necessary:",
+          "Vercel Inc. — hosting of the website and provider of Vercel Web Analytics and Vercel Speed Insights (cookieless, aggregated analytics and performance monitoring).",
+          "Resend (Resend.com, Inc.) — transactional email delivery for messages sent through the contact form to our internal inbox.",
+          "Google Search Console — off-site webmaster tool that shows us aggregated search-performance data from Google's index. It does not place any script or cookie on the Site.",
+          "We may also disclose personal data to competent authorities where required to do so by law."
+        ]
+      },
+      "transfers": {
+        "title": "International Transfers",
+        "content": "Some of our service providers (such as Vercel and Resend) are based outside North Macedonia and the European Economic Area, or process data in data centres located outside those territories. Where personal data is transferred internationally, we rely on appropriate safeguards under the GDPR, such as the European Commission's Standard Contractual Clauses and the providers' own technical and organisational measures. If you would like more information on the safeguards in place, please contact us at info@ostrogluna.com."
+      },
+      "retention": {
+        "title": "How Long We Keep Your Data",
+        "content": [
+          "Contact form submissions and related correspondence: kept for as long as needed to handle your enquiry and any resulting business relationship, and afterwards for a reasonable period for evidentiary and accounting purposes (typically up to 24 months from the last meaningful contact, unless a longer period is required by law).",
+          "Server and security logs: kept for short technical periods (typically up to 30 days) and only for as long as needed to operate and secure the Site.",
+          "Aggregated analytics statistics: retained without identifying individual visitors.",
+          "When we no longer need personal data, we delete or anonymise it."
+        ]
+      },
+      "yourRights": {
         "title": "Your Rights",
-        "content": "Under applicable data protection legislation, you have the right to access, rectify, or erase your personal data, and the right to restrict or object to processing."
+        "content": [
+          "Subject to the conditions set out in the GDPR and the North Macedonia Law on Personal Data Protection, you have the right to:",
+          "access the personal data we hold about you and obtain a copy;",
+          "request correction of inaccurate or incomplete data;",
+          "request erasure of your data where one of the legal grounds for erasure applies;",
+          "request restriction of processing, or object to processing carried out on the basis of legitimate interest;",
+          "withdraw any consent you have given, at any time, without affecting the lawfulness of processing carried out beforehand;",
+          "request data portability, where applicable;",
+          "lodge a complaint with the competent data protection supervisory authority if you believe our processing of your personal data is not in line with applicable law."
+        ]
+      },
+      "exerciseRights": {
+        "title": "How to Exercise Your Rights",
+        "content": "To exercise any of the rights above, please write to info@ostrogluna.com. We may need to verify your identity before acting on your request. We will respond within the time frame required by applicable law (generally one month, with the possibility of extension for complex requests)."
+      },
+      "children": {
+        "title": "Children",
+        "content": "The Site is intended for a business audience and is not directed at children. We do not knowingly collect personal data from children."
+      },
+      "security": {
+        "title": "Security",
+        "content": "We apply reasonable technical and organisational measures to protect personal data against accidental or unlawful destruction, loss, alteration, unauthorised disclosure or access. No method of transmission over the internet, however, can be guaranteed to be 100% secure."
+      },
+      "changes": {
+        "title": "Changes to This Policy",
+        "content": "We may update this Privacy Policy to reflect changes to the Site, our practices or applicable law. The \"Last updated\" date at the top of this page indicates when the most recent revision was made. We encourage you to review this page periodically."
       }
     },
     "contactNote": "For any data-related inquiries, please contact us at:"
   },
   "whistleblowerPolicy": {
     "title": "Whistleblowing & Integrity Policy",
-    "intro": "Ostrog Luna is committed to the highest standards of transparency and ethical conduct. In accordance with applicable North Macedonia whistleblower protection legislation and the EU Whistleblower Protection Directive (2019/1937), we provide a secure channel for employees, contractors, and partners to report suspected misconduct, fraud, or environmental breaches.",
+    "lastUpdated": "Last updated: 8 April 2026",
+    "intro": "Ostrog Luna is committed to high standards of transparency, integrity and ethical conduct. In line with the legislation of the Republic of North Macedonia on the protection of whistleblowers and the EU Whistleblower Protection Directive (2019/1937), we provide a secure channel for employees, contractors, suppliers and partners to report suspected wrongdoing in good faith.",
     "sections": {
+      "scope": {
+        "title": "What Can Be Reported",
+        "content": "You can use this channel to report concerns about suspected violations of law, fraud, corruption, misuse of funds, serious health, safety or environmental risks, breaches of food-safety obligations, or other serious misconduct connected to our activities."
+      },
       "confidentiality": {
         "title": "Confidentiality",
-        "content": "All reports are handled with the highest level of anonymity and strict confidentiality."
+        "content": "All reports are handled with strict confidentiality. The identity of the reporting person, and the identity of any third party mentioned in the report, will not be disclosed beyond the persons authorised to receive and follow up on the report, except where disclosure is required by law in the context of investigations or judicial proceedings."
       },
       "noRetaliation": {
         "title": "No Retaliation",
-        "content": "We strictly prohibit any form of retaliation, discrimination, or adverse treatment against any person who reports a breach in good faith."
+        "content": "We strictly prohibit any form of retaliation, discrimination, demotion, dismissal, harassment or other adverse treatment against any person who reports a concern in good faith, or who assists with an investigation."
       },
       "reportingChannel": {
-        "title": "Reporting Channel",
-        "content": "Reports should be submitted to our Compliance Officer at:"
+        "title": "How to Report",
+        "content": "Reports may be submitted in writing to our Compliance Officer at:"
       }
     },
     "contactNote": "For any questions regarding this policy, please contact us at:"
